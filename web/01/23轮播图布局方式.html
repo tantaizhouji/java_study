@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>23</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.box{
+			position: relative;
+			width: 520px;
+			height: 280px;
+			border: 1px solid red;
+			left: 30%;
+			top:100px;
+			overflow: hidden;
+		}
+		ul{
+			position: absolute;
+			width: 520px;
+			height: 280px;
+			list-style: none;
+		}
+		.leftbtn{
+			position: absolute;
+			width: 60px;
+			height: 30px;
+			background-color: black;
+			left: 0px;
+			top: 120px;
+			color: white;
+			text-align: center;
+			line-height: 30px;
+			cursor: pointer;
+			opacity: 0.5;
+		}
+		.rightbtn{
+			position: absolute;
+			width: 60px;
+			height: 30px;
+			background-color: black;
+			right: 0px;
+			top: 120px;
+			color: white;
+			text-align: center;
+			line-height: 30px;
+			cursor: pointer;
+			opacity: 0.5;
+		}
+		ol{
+			position: absolute;
+			width: 200px;
+			height: 25px;
+			left: 160px;
+			bottom: 10px;
+			list-style: none;
+		}
+		ol li{
+			float: left;
+			width: 25px;
+			height: 25px;
+			color: white;
+			text-align: center;
+			line-height: 25px;
+			margin-right: 7px;
+			border-radius: 12.5px;
+			background-color: black;
+			cursor: pointer;
+		}
+		.cur{
+			background-color: skyblue;
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li><img src="03.jpg" alt="" /></li>
+			<li><img src="03.jpg" alt="" /></li>
+			<li><img src="03.jpg" alt="" /></li>
+			<li><img src="03.jpg" alt="" /></li>
+			<li><img src="03.jpg" alt="" /></li>
+			<li><img src="03.jpg" alt="" /></li>
+		</ul>
+		<div class="leftbtn">left</div>
+		<div class="rightbtn">right</div>
+		<ol>
+			<li class="cur">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ol>
+	</div>
+</body>
+</html>

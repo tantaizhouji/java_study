@@ -1,0 +1,1434 @@
+[19:53:42,792] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[19:53:42,833] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> com.tinygame.herostory.cmdHandler.GetRankCmdHandler
+[19:53:42,834] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> com.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[19:53:42,835] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> com.tinygame.herostory.cmdHandler.UserLoginCmdHandler
+[19:53:42,835] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> com.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[19:53:42,837] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> com.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[19:53:42,838] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> com.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[19:53:42,839] [INFO] GameMsgRecognizer.init --> ==== 完成 MsgBody 和 MsgCode 的关联 ====
+[19:53:42,861] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankResult <==> 18
+[19:53:42,862] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> 17
+[19:53:42,863] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroResult <==> 16
+[19:53:42,864] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroCmd <==> 15
+[19:53:42,865] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginResult <==> 14
+[19:53:42,866] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> 13
+[19:53:42,867] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[19:53:42,868] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[19:53:42,870] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[19:53:42,871] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[19:53:42,872] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[19:53:42,873] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[19:53:42,874] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[19:53:42,875] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[19:53:42,877] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[19:53:42,879] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[19:53:42,880] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[19:53:42,881] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[19:53:42,882] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[19:53:43,680] [INFO] ServerMain.main --> 服务器启动成功!
+[19:54:21,154] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "a"
+password: "1"
+
+[19:54:21,154] [INFO] UserLoginCmdHandler.handle --> userName = a, password = 1
+[19:54:21,162] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
+[19:54:21,371] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[19:54:21,371] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 1, userName = a
+[19:54:22,096] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[19:54:22,099] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[19:54:22,794] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:54:23,313] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -20.5898
+moveToPosY: -54.048256
+
+[19:54:28,289] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
+password: "2"
+
+[19:54:28,289] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 2
+[19:54:28,290] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
+[19:54:28,292] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[19:54:28,292] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
+[19:54:28,343] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[19:54:28,343] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[19:54:29,313] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -126.9705
+moveToPosY: -52.33244
+
+[19:54:29,944] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -81.069435
+moveFromPosY: -53.33644
+moveToPosX: -195.60321
+moveToPosY: -19.731903
+
+[19:54:30,449] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -145.05948
+moveFromPosY: -19.212404
+moveToPosX: -171.58176
+moveToPosY: -38.6059
+
+[19:54:30,648] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -170.65846
+moveFromPosY: -40.547825
+moveToPosX: -163.00267
+moveToPosY: -43.75335
+
+[19:54:31,009] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -162.12383
+moveFromPosY: -44.816883
+moveToPosX: -144.12868
+moveToPosY: -47.184986
+
+[19:54:31,217] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -142.92319
+moveFromPosY: -49.084023
+moveToPosX: -133.83377
+moveToPosY: -52.33244
+
+[19:54:32,489] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -21.332737
+moveFromPosY: -55.463806
+moveToPosX: 51.47454
+moveToPosY: -54.048256
+
+[19:54:32,705] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 6.3916783
+moveFromPosY: -53.336575
+moveToPosX: 5.1474648
+moveToPosY: -62.627346
+
+[19:54:32,880] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 4.2545905
+moveFromPosY: -64.003075
+moveToPosX: -6.8632593
+moveToPosY: -71.206436
+
+[19:54:33,056] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -8.54669
+moveFromPosY: -72.537094
+moveToPosX: -17.158165
+moveToPosY: -76.35389
+
+[19:54:33,248] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -19.213955
+moveFromPosY: -76.805
+moveToPosX: -27.453072
+moveToPosY: -74.63807
+
+[19:54:33,448] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -27.750147
+moveFromPosY: -72.55002
+moveToPosX: -34.31634
+moveToPosY: -64.34316
+
+[19:54:33,658] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -36.283134
+moveFromPosY: -64.01703
+moveToPosX: -34.31634
+moveToPosY: -57.479893
+
+[19:54:34,065] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -34.1495
+moveFromPosY: -55.483906
+moveToPosX: -46.327065
+moveToPosY: -48.900803
+
+[19:54:35,081] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:54:35,704] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:54:37,001] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[19:54:37,001] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:54:38,064] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:54:39,057] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:54:39,058] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:54:39,873] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:54:39,873] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:54:40,209] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:54:40,209] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:54:40,384] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:54:40,385] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:54:40,561] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:54:40,561] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:21,624] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:58:22,801] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[19:58:22,801] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:23,168] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[19:58:23,169] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:23,656] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -46.95014
+moveFromPosY: -46.949764
+moveToPosX: 56.621994
+moveToPosY: -83.217155
+
+[19:58:23,872] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -19.218174
+moveFromPosY: -74.68174
+moveToPosX: 54.906178
+moveToPosY: -119.24933
+
+[19:58:24,569] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -132.25899
+moveFromPosY: -53.34911
+moveToPosX: 128.68634
+moveToPosY: 33.458447
+
+[19:58:24,760] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -106.65911
+moveFromPosY: -27.749237
+moveToPosX: 1.1536135E-5
+moveToPosY: 26.595175
+
+[19:58:24,944] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -83.19403
+moveFromPosY: -4.284151
+moveToPosX: -171.58176
+moveToPosY: -40.321716
+
+[19:58:25,112] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -104.52715
+moveFromPosY: -25.61727
+moveToPosX: -223.05629
+moveToPosY: -55.764076
+
+[19:58:25,568] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:58:26,416] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:30,976] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "a"
+password: "1"
+
+[19:58:30,976] [INFO] UserLoginCmdHandler.handle --> userName = a, password = 1
+[19:58:30,976] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
+[19:58:30,978] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[19:58:30,978] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 1, userName = a
+[19:58:31,020] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[19:58:31,021] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[19:58:31,769] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 41.179638
+moveToPosY: -31.742628
+
+[19:58:31,953] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 25.599617
+moveFromPosY: -25.599617
+moveToPosX: 56.621994
+moveToPosY: -31.742628
+
+[19:58:32,105] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 44.799618
+moveFromPosY: -31.999617
+moveToPosX: 10.294918
+moveToPosY: -50.616623
+
+[19:58:32,544] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:58:33,232] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:58:34,136] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:34,481] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -223.99196
+moveFromPosY: -57.617653
+moveToPosX: 77.21181
+moveToPosY: -74.63807
+
+[19:58:34,672] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -198.39287
+moveFromPosY: -74.68364
+moveToPosX: 51.47454
+moveToPosY: -95.22788
+
+[19:58:34,848] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -177.0595
+moveFromPosY: -96.017006
+moveToPosX: 10.294918
+moveToPosY: -86.648796
+
+[19:58:35,408] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:58:36,441] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:36,712] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 10.67077
+moveFromPosY: -85.34859
+moveToPosX: -428.9544
+moveToPosY: -141.55496
+
+[19:58:37,008] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -27.72859
+moveFromPosY: -123.74794
+moveToPosX: -252.22519
+moveToPosY: -55.764076
+
+[19:58:37,216] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -53.32872
+moveFromPosY: -98.14781
+moveToPosX: -214.4772
+moveToPosY: -30.02681
+
+[19:58:37,384] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -74.661446
+moveFromPosY: -76.81508
+moveToPosX: -195.60321
+moveToPosY: -19.731903
+
+[19:58:37,588] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:37,784] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:37,984] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:38,153] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:58:38,384] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -100.261314
+moveFromPosY: -51.21521
+moveToPosX: -80.64342
+moveToPosY: -67.774796
+
+[19:58:38,577] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -78.92857
+moveFromPosY: -68.283104
+moveToPosX: -41.179615
+moveToPosY: -52.33244
+
+[19:58:38,769] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:58:38,769] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:39,032] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:58:39,032] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:39,224] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:58:39,225] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:39,408] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:58:39,409] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:39,744] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -55.4622
+moveFromPosY: -51.216476
+moveToPosX: -104.66487
+moveToPosY: -43.75335
+
+[19:58:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -78.92793
+moveFromPosY: -42.683353
+moveToPosX: -135.54959
+moveToPosY: -38.6059
+
+[19:58:40,201] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -113.06054
+moveFromPosY: -38.41494
+moveToPosX: -48.042885
+moveToPosY: -33.458447
+
+[19:58:40,448] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:58:40,449] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:40,984] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -81.06053
+moveFromPosY: -32.015194
+moveToPosX: -65.20106
+moveToPosY: -79.78552
+
+[19:58:41,241] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[19:58:41,241] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[19:58:41,840] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -63.99403
+moveFromPosY: -66.14831
+moveToPosX: -149.27612
+moveToPosY: -55.764076
+
+[19:58:42,176] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -106.66026
+moveFromPosY: -55.48117
+moveToPosX: -159.57103
+moveToPosY: -76.35389
+
+[19:58:42,353] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -130.11487
+moveFromPosY: -76.81519
+moveToPosX: -156.1394
+moveToPosY: -83.217155
+
+[19:59:48,440] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:59:49,056] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:59:49,840] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:59:52,104] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:52,728] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 8.5333805
+moveFromPosY: -51.19936
+moveToPosX: 171.58179
+moveToPosY: -30.02681
+
+[19:59:53,064] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 51.19783
+moveFromPosY: -29.86816
+moveToPosX: 123.53889
+moveToPosY: -88.36461
+
+[19:59:53,672] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:59:54,808] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:55,344] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[19:59:56,185] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:56,472] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -157.85938
+moveFromPosY: -83.22671
+moveToPosX: -20.5898
+moveToPosY: 18.016087
+
+[19:59:56,648] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -136.52637
+moveFromPosY: -61.893715
+moveToPosX: 17.158188
+moveToPosY: -26.595175
+
+[19:59:56,816] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -115.19158
+moveFromPosY: -40.558933
+moveToPosX: 78.92763
+moveToPosY: -71.206436
+
+[19:59:57,024] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:57,200] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:57,376] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:57,552] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[19:59:57,824] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -87.46013
+moveFromPosY: -68.29039
+moveToPosX: -97.8016
+moveToPosY: -79.78552
+
+[19:59:57,992] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -98.12662
+moveFromPosY: -81.09051
+moveToPosX: -138.98122
+moveToPosY: -69.490616
+
+[19:59:58,168] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -121.59222
+moveFromPosY: -68.291405
+moveToPosX: -144.12868
+moveToPosY: -62.627346
+
+[19:59:58,353] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -145.05882
+moveFromPosY: -61.89064
+moveToPosX: -152.70776
+moveToPosY: -40.321716
+
+[19:59:58,528] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -153.5927
+moveFromPosY: -40.557648
+moveToPosX: -113.24396
+moveToPosY: -66.05898
+
+[19:59:58,704] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -130.12645
+moveFromPosY: -64.02388
+moveToPosX: -116.67559
+moveToPosY: -72.92225
+
+[19:59:58,904] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -115.19345
+moveFromPosY: -74.690125
+moveToPosX: -123.538864
+moveToPosY: -74.63807
+
+[20:00:00,056] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -123.72695
+moveFromPosY: -72.55406
+moveToPosX: -108.096504
+moveToPosY: -81.50134
+
+[20:00:00,248] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -106.66109
+moveFromPosY: -83.22133
+moveToPosX: -101.23323
+moveToPosY: -91.79625
+
+[20:00:00,920] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -100.261475
+moveFromPosY: -93.88769
+moveToPosX: -113.24396
+moveToPosY: -95.22788
+
+[20:00:01,120] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -115.19486
+moveFromPosY: -96.02222
+moveToPosX: -132.11795
+moveToPosY: -95.22788
+
+[20:00:01,672] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -132.2606
+moveFromPosY: -93.88833
+moveToPosX: -125.25468
+moveToPosY: -88.36461
+
+[20:00:02,144] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -123.7271
+moveFromPosY: -87.487175
+moveToPosX: -116.67559
+moveToPosY: -86.648796
+
+[20:00:16,921] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
+password: "2"
+
+[20:00:16,921] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 2
+[20:00:16,921] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
+[20:00:16,923] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[20:00:16,923] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
+[20:00:16,968] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[20:00:16,969] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:00:17,817] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -34.31634
+moveToPosY: 21.447721
+
+[20:00:18,002] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -25.602175
+moveFromPosY: 23.465471
+moveToPosX: -92.654144
+moveToPosY: 14.584451
+
+[20:00:18,184] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -49.06624
+moveFromPosY: 12.801919
+moveToPosX: -104.66487
+moveToPosY: -14.584451
+
+[20:00:18,360] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -70.39744
+moveFromPosY: -8.529282
+moveToPosX: -106.380684
+moveToPosY: -40.321716
+
+[20:00:18,544] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -93.86675
+moveFromPosY: -31.998592
+moveToPosX: -97.8016
+moveToPosY: -45.46917
+
+[20:00:19,552] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -98.132614
+moveFromPosY: -46.929024
+moveToPosX: -101.23323
+moveToPosY: -54.048256
+
+[20:00:19,737] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -102.39936
+moveFromPosY: -55.463425
+moveToPosX: -94.369965
+moveToPosY: -59.19571
+
+[20:00:19,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -93.86548
+moveFromPosY: -59.730305
+moveToPosX: -65.20106
+moveToPosY: -59.19571
+
+[20:00:20,128] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -68.2665
+moveFromPosY: -57.59552
+moveToPosX: -75.495964
+moveToPosY: -60.91153
+
+[20:00:20,304] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -76.79976
+moveFromPosY: -61.86253
+moveToPosX: -96.08578
+moveToPosY: -64.34316
+
+[20:00:20,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -98.13071
+moveFromPosY: -66.12954
+moveToPosX: -108.096504
+moveToPosY: -67.774796
+
+[20:00:21,128] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -108.809364
+moveFromPosY: -68.26458
+moveToPosX: -116.67559
+moveToPosY: -55.764076
+
+[20:00:28,689] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "c"
+password: "3"
+
+[20:00:28,689] [INFO] UserLoginCmdHandler.handle --> userName = c, password = 3
+[20:00:28,690] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor3
+[20:00:28,698] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[20:00:28,698] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 3, userName = c
+[20:00:28,737] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[20:00:28,738] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:00:29,433] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -48.042885
+moveToPosY: -38.6059
+
+[20:00:29,624] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -25.599615
+moveFromPosY: -25.599615
+moveToPosX: -60.053608
+moveToPosY: -45.46917
+
+[20:00:29,825] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -51.198975
+moveFromPosY: -46.932735
+moveToPosX: -66.91688
+moveToPosY: -64.34316
+
+[20:00:30,017] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -68.26662
+moveFromPosY: -66.13248
+moveToPosX: -63.485245
+moveToPosY: -72.92225
+
+[20:00:30,416] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:30,752] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:30,977] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:31,176] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:31,384] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:31,601] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:32,096] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:32,512] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 123.731834
+moveFromPosY: -89.600365
+moveToPosX: 78.92763
+moveToPosY: -71.206436
+
+[20:00:32,880] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:33,417] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 76.79897
+moveFromPosY: -70.40037
+moveToPosX: 46.327087
+moveToPosY: -95.22788
+
+[20:00:33,625] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:00:34,176] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 49.066227
+moveFromPosY: -95.99986
+moveToPosX: 24.02146
+moveToPosY: -84.932976
+
+[20:00:34,432] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:34,432] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:34,960] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:34,960] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:35,264] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:35,264] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:35,440] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:35,440] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:35,592] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:35,592] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:35,777] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:35,777] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:36,320] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:36,320] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:36,688] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:36,688] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:36,913] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:36,913] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:00:37,504] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[20:00:37,504] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:41:23,025] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[20:41:45,525] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[20:46:05,570] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[20:52:38,423] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:00:00,098] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:02:04,357] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:08:24,807] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:11:46,486] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:16:21,729] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:18:22,531] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:21:01,842] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:24:44,099] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:24:44,101] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:24:44,102] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:31:17,227] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:31:27,500] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[21:36:04,374] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 23.466867
+moveFromPosY: -83.19974
+moveToPosX: 44.61127
+moveToPosY: -26.595175
+
+[21:36:04,817] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 44.79154
+moveFromPosY: -25.601398
+moveToPosX: -18.873983
+moveToPosY: -88.36461
+
+[21:36:05,025] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 19.199986
+moveFromPosY: -51.192944
+moveToPosX: -3.431624
+moveToPosY: -88.36461
+
+[21:36:05,281] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:05,282] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:05,482] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:05,482] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:05,650] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:05,650] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:05,825] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:05,825] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:14,306] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
+password: "2"
+
+[21:36:14,306] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 2
+[21:36:14,307] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
+[21:36:14,315] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[21:36:14,316] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
+[21:36:14,367] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[21:36:14,367] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[21:36:14,993] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -207.61392
+moveToPosY: 23.163538
+
+[21:36:15,441] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -57.59936
+moveFromPosY: 23.466879
+moveToPosX: -128.68631
+moveToPosY: -57.479893
+
+[21:36:15,650] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -85.32031
+moveFromPosY: -4.2540812
+moveToPosX: -133.83377
+moveToPosY: -81.50134
+
+[21:36:15,834] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -108.79961
+moveFromPosY: -27.733376
+moveToPosX: -92.654144
+moveToPosY: -86.648796
+
+[21:36:16,001] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -91.734634
+moveFromPosY: -49.065723
+moveToPosX: -63.485245
+moveToPosY: -90.08043
+
+[21:36:16,201] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -66.146286
+moveFromPosY: -74.65407
+moveToPosX: -42.89543
+moveToPosY: -95.22788
+
+[21:36:16,417] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:16,417] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:17,082] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -42.66737
+moveFromPosY: -95.99729
+moveToPosX: -90.938324
+moveToPosY: -90.08043
+
+[21:36:17,313] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -72.54282
+moveFromPosY: -89.59934
+moveToPosX: -94.369965
+moveToPosY: -88.36461
+
+[21:36:17,793] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -96.00753
+moveFromPosY: -87.46404
+moveToPosX: -42.89543
+moveToPosY: -91.79625
+
+[21:36:18,209] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:18,209] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:19,001] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -4.266126
+moveFromPosY: -83.2005
+moveToPosX: -22.305618
+moveToPosY: -79.78552
+
+[21:36:19,369] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -23.465998
+moveFromPosY: -78.933365
+moveToPosX: 96.0858
+moveToPosY: -95.22788
+
+[21:36:19,585] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 4.2671227
+moveFromPosY: -95.99973
+moveToPosX: 90.93835
+moveToPosY: -102.091156
+
+[21:36:20,121] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:20,609] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 72.53311
+moveFromPosY: -102.399605
+moveToPosX: -6.8632593
+moveToPosY: -90.08043
+
+[21:36:20,992] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:21,481] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:21,953] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 23.468418
+moveFromPosY: -89.6005
+moveToPosX: -29.16889
+moveToPosY: -115.817696
+
+[21:36:22,168] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:22,353] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:22,681] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -4.2661114
+moveFromPosY: -117.33503
+moveToPosX: -25.737253
+moveToPosY: -79.78552
+
+[21:36:22,913] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:23,160] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:23,352] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:23,657] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -27.733757
+moveFromPosY: -87.46839
+moveToPosX: 72.064354
+moveToPosY: -62.627346
+
+[21:36:23,857] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -2.1377244
+moveFromPosY: -61.872368
+moveToPosX: 77.21181
+moveToPosY: -62.627346
+
+[21:36:24,057] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 23.458307
+moveFromPosY: -63.99141
+moveToPosX: 78.92763
+moveToPosY: -84.932976
+
+[21:36:24,282] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 51.192833
+moveFromPosY: -85.3253
+moveToPosX: 34.316364
+moveToPosY: -98.659515
+
+[21:36:24,457] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:24,665] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:24,849] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 3
+
+[21:36:25,482] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -42.66801
+moveFromPosY: -93.87313
+moveToPosX: -106.380684
+moveToPosY: -69.490616
+
+[21:36:25,697] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:25,873] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:26,145] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -70.40112
+moveFromPosY: -68.27608
+moveToPosX: 24.02146
+moveToPosY: -115.817696
+
+[21:36:26,537] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:26,537] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:26,721] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:26,721] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:26,905] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:26,905] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:27,081] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:27,082] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:27,369] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:27,369] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:27,809] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:27,809] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:28,001] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:28,001] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:28,185] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:28,185] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:28,369] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:28,369] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:29,953] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -19.2024
+moveFromPosY: -117.34923
+moveToPosX: 87.506714
+moveToPosY: -72.92225
+
+[21:36:30,169] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:30,169] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:30,352] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:30,353] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:30,545] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:30,545] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:33,714] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "a"
+password: "1"
+
+[21:36:33,714] [INFO] UserLoginCmdHandler.handle --> userName = a, password = 1
+[21:36:33,714] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
+[21:36:33,716] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[21:36:33,716] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 1, userName = a
+[21:36:33,764] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[21:36:33,765] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[21:36:34,267] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 231.6354
+moveToPosY: -19.731903
+
+[21:36:34,466] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 25.600386
+moveFromPosY: -21.329922
+moveToPosX: 116.67561
+moveToPosY: 24.879356
+
+[21:36:34,688] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 53.329792
+moveFromPosY: 6.3994865
+moveToPosX: 60.05363
+moveToPosY: -4.289544
+
+[21:36:34,857] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 61.861378
+moveFromPosY: -6.400001
+moveToPosX: -20.5898
+moveToPosY: -38.6059
+
+[21:36:35,057] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 36.266876
+moveFromPosY: -31.994497
+moveToPosX: 1.1536135E-5
+moveToPosY: -62.627346
+
+[21:36:35,241] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 12.802041
+moveFromPosY: -55.45933
+moveToPosX: 39.463818
+moveToPosY: -67.774796
+
+[21:36:35,417] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 36.267387
+moveFromPosY: -68.25856
+moveToPosX: 97.80162
+moveToPosY: -62.627346
+
+[21:36:35,585] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:35,586] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:35,929] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:35,929] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:36,145] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:36,146] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:36,866] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:36,866] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:37,097] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:37,098] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:37,769] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:37,769] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:38,345] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 8.527647
+moveFromPosY: -89.61919
+moveToPosX: 164.7185
+moveToPosY: -28.310991
+
+[21:36:38,633] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 46.938015
+moveFromPosY: -51.208817
+moveToPosX: 77.21181
+moveToPosY: -31.742628
+
+[21:36:38,753] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 61.863586
+moveFromPosY: -36.283245
+moveToPosX: 85.79089
+moveToPosY: -52.33244
+
+[21:36:38,953] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 87.469734
+moveFromPosY: -53.34833
+moveToPosX: 99.51744
+moveToPosY: -59.19571
+
+[21:36:39,129] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 100.27139
+moveFromPosY: -59.748714
+moveToPosX: 106.38071
+moveToPosY: -62.627346
+
+[21:36:39,457] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:40,385] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 106.672035
+moveFromPosY: -64.0115
+moveToPosX: -89.22251
+moveToPosY: -54.048256
+
+[21:36:40,729] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 64.00836
+moveFromPosY: -53.340263
+moveToPosX: -111.52814
+moveToPosY: -52.33244
+
+[21:36:41,217] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 57.60332
+moveFromPosY: -61.857925
+moveToPosX: 159.57106
+moveToPosY: -42.037533
+
+[21:36:41,416] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 83.19372
+moveFromPosY: -40.524036
+moveToPosX: 128.68634
+moveToPosY: -35.174263
+
+[21:36:41,657] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 113.06828
+moveFromPosY: -34.12237
+moveToPosX: -24.021437
+moveToPosY: -21.447721
+
+[21:36:41,841] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 89.60103
+moveFromPosY: -21.321474
+moveToPosX: -90.938324
+moveToPosY: -43.75335
+
+[21:36:42,041] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 64.01048
+moveFromPosY: -44.78848
+moveToPosX: -104.66487
+moveToPosY: -67.774796
+
+[21:36:42,456] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 10.667632
+moveFromPosY: -68.25549
+moveToPosX: -113.24396
+moveToPosY: -59.19571
+
+[21:36:43,017] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:43,017] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:43,705] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:43,705] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:45,065] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:45,305] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:45,673] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -113.0557
+moveFromPosY: -51.20407
+moveToPosX: -73.78015
+moveToPosY: -54.048256
+
+[21:36:45,849] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:45,850] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:46,049] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:46,049] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:46,288] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:46,288] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:46,489] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:46,489] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:46,977] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:46,977] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:47,521] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -61.853577
+moveFromPosY: -57.600517
+moveToPosX: -53.19034
+moveToPosY: -67.774796
+
+[21:36:47,705] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -51.19515
+moveFromPosY: -68.25895
+moveToPosX: -154.42358
+moveToPosY: -67.774796
+
+[21:36:47,865] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -72.52431
+moveFromPosY: -66.12442
+moveToPosX: -188.73993
+moveToPosY: -74.63807
+
+[21:36:49,065] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:49,433] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -189.8623
+moveFromPosY: -74.6697
+moveToPosX: -12.010713
+moveToPosY: -54.048256
+
+[21:36:49,850] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:49,850] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:50,081] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:50,081] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:50,281] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:50,282] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:53,786] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
+password: "2"
+
+[21:36:53,786] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 2
+[21:36:53,786] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
+[21:36:53,788] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[21:36:53,788] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
+[21:36:53,832] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[21:36:53,832] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[21:36:54,474] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -178.44502
+moveToPosY: -45.46917
+
+[21:36:54,737] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -34.132355
+moveFromPosY: -34.132355
+moveToPosX: -180.16084
+moveToPosY: -45.46917
+
+[21:36:55,081] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -76.790535
+moveFromPosY: -46.923653
+moveToPosX: -89.22251
+moveToPosY: -14.584451
+
+[21:36:55,345] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:36:55,809] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -89.5977
+moveFromPosY: -12.791306
+moveToPosX: -10.294894
+moveToPosY: -67.774796
+
+[21:36:56,073] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:56,073] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:56,257] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:36:56,257] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:56,784] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -136.51318
+moveFromPosY: -53.3326
+moveToPosX: 102.94907
+moveToPosY: -59.19571
+
+[21:36:56,969] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -113.05629
+moveFromPosY: -59.72223
+moveToPosX: 34.316364
+moveToPosY: -59.19571
+
+[21:36:57,153] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -89.58749
+moveFromPosY: -57.580788
+moveToPosX: -49.7587
+moveToPosY: -67.774796
+
+[21:36:57,369] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -61.84938
+moveFromPosY: -68.25317
+moveToPosX: -128.68631
+moveToPosY: -54.048256
+
+[21:36:57,585] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -89.58122
+moveFromPosY: -53.319275
+moveToPosX: -152.70776
+moveToPosY: -54.048256
+
+[21:36:57,937] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -134.3816
+moveFromPosY: -55.44625
+moveToPosX: -48.042885
+moveToPosY: -57.479893
+
+[21:36:58,153] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:58,153] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:58,353] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:58,353] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:58,545] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:58,545] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:58,745] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:58,745] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:58,920] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:58,921] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:59,266] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:59,266] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:36:59,482] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[21:36:59,483] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:37:00,145] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -55.467148
+moveFromPosY: -46.921867
+moveToPosX: 3.4316468
+moveToPosY: -60.91153
+
+[21:37:00,408] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:37:00,969] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:37:01,385] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[21:37:01,697] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -21.333517
+moveFromPosY: -61.86433
+moveToPosX: -221.34047
+moveToPosY: -48.900803
+
+[21:37:01,889] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:37:01,889] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:37:02,088] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:37:02,089] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:37:02,265] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
+
+[21:37:02,265] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[21:40:34,259] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+[22:22:56,923] [WARN] DefaultChannelPipeline.onUnhandledInboundException --> An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:247)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1147)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1050)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)

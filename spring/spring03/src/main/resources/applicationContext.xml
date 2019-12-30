@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    集合的属性注入-->
+    <bean name="person" class="com.yangqihang.spring.Person">
+
+        <property name="list">
+            <list>
+                <value>3</value>
+                <value>2</value>
+                <value>4</value>
+                <value>1</value>
+                <value>4</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>3</value>
+                <value>2</value>
+                <value>4</value>
+                <value>1</value>
+                <value>1</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="a"></entry>
+                <entry key="2" value="b"></entry>
+            </map>
+        </property>
+
+        <property name="strings">
+            <array>
+                <value>a</value>
+                <value>b</value>
+                <value>c</value>
+            </array>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="baidu">www.baidu.com</prop>
+                <prop key="bilibili">www.bilibili.com</prop>
+            </props>
+        </property>
+    </bean>
+</beans>

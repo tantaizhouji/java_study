@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <style>
+        form {
+            padding-top: 100px;
+            margin: auto;
+            width: 40%;
+        }
+
+        .tip {
+            color: #e20411;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <div class="form-group">
+        <label for="loginName">*用户名</label>
+        <input type="text" class="form-control" id="loginName" placeholder="请输入用户名" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="password">*密码</label>
+        <input type="password" class="form-control" id="password" placeholder="请输入密码" autocomplete="on">
+    </div>
+    <div class="form-group">
+        <label for="nickName">昵称</label>
+        <input type="text" class="form-control" id="nickName" placeholder="请输入昵称">
+    </div>
+    <div class="form-group">
+        <label for="age">年龄</label>
+        <input type="text" class="form-control" id="age" placeholder="请输入年龄">
+    </div>
+    <div class="form-group">
+        <label for="location">地区</label>
+        <input type="text" class="form-control" id="location" placeholder="请输入地区">
+    </div>
+
+    <div class="btn btn-default" id="btn_register">提交注册</div>
+    <p class="tip">用户名或密码不能为空</p>
+</form>
+
+</body>
+</html>
+<script type="text/javascript">
+    $("#btn_register").click(function () {
+
+        var loginName = $("#loginName").val();
+        var password = $("#password").val();
+        var nickName = $("#nickName").val();
+        var age = $("#age").val();
+        var location = $("#location").val();
+
+        //如果账号和密码有空的，显示提示
+        if (loginName == "" || password == "") {
+            $(".tip").html("用户名或密码不能为空");
+            $(".tip").css("display", "block");
+            return;
+        }
+
+        // 异步注册账号密码
+        var url = "/account/accountRegister";
+        var args = {loginName: loginName, password: password, nickName: nickName, age: age, location: location};
+        $.post(url, args, function (data) {
+
+            if (data.code == 200) {
+                // 注册成功 跳转至登录界面页面
+                $(".tip").html(data.msg);
+                $(".tip").css("display", "block");
+                window.setTimeout("window.location.href='/account/login'", 3000);
+            } else {
+                $(".tip").html(data.msg);
+                $(".tip").css("display", "block");
+            }
+
+            console.log(data);
+        });
+    })
+</script>

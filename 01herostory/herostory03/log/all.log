@@ -1,0 +1,21 @@
+[10:06:34,175] [INFO] ServerMain.main --> 服务器启动成功!
+[14:04:41,029] [INFO] ServerMain.main --> 服务器启动成功!
+[14:04:58,466] [ERROR] GameMsgDecoder.channelRead --> 无法识别的消息, msgCode = 9
+[14:05:00,207] [ERROR] GameMsgDecoder.channelRead --> 无法识别的消息, msgCode = 9
+[14:05:03,663] [ERROR] GameMsgDecoder.channelRead --> 无法识别的消息, msgCode = 9
+[14:05:09,063] [ERROR] GameMsgDecoder.channelRead --> 无法识别的消息, msgCode = 9
+[14:05:09,848] [ERROR] GameMsgDecoder.channelRead --> 无法识别的消息, msgCode = 9
+[14:42:20,536] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[14:42:20,539] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[14:42:20,542] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[14:42:20,543] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[14:42:20,544] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[14:42:20,545] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[14:42:20,548] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[14:42:20,549] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[14:42:20,549] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[14:42:20,551] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[14:42:20,552] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[14:42:20,553] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[14:42:20,554] [INFO] GameMsgRecognizer.init --> com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[14:42:21,238] [INFO] ServerMain.main --> 服务器启动成功!

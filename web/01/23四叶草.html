@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>23</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.box{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			left:40%;
+			top:100px;
+			/*调用动画*/
+			animation: donghua 5s linear 0s infinite;
+		}
+		.ye{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: green;
+		}
+		#y1{
+			left:0px;
+			top:0px;
+			border-radius: 0px 90px 0px 90px;
+		}
+		#y2{
+			left: 100px;
+			top: 0px;
+			border-radius: 90px 0px 90px 0px;
+		}
+		#y3{
+			left: 0px;
+			top: 100px;
+			border-radius: 90px 0px 90px 0px;
+		}
+		#y4{
+			left: 100px;
+			top: 100px;
+			border-radius: 0px 90px 0px 90px;
+		}
+
+		/*声明一个animation动画*/
+		@-webkit-keyframes donghua{
+			from{
+				transform: rotate(0deg);
+			}
+			to{
+				transform:rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="ye" id="y1"></div>
+		<div class="ye" id="y2"></div>
+		<div class="ye" id="y3"></div>
+		<div class="ye" id="y4"></div>
+	</div>
+</body>
+</html>

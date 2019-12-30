@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    属性注入:Spring会调set方法来DI-->
+    <bean id="person" class="com.yangqihang.spring.Person">
+        <property name="name"><value>小猪头</value></property>
+        <property name="age" value="18"></property>
+        <property name="food" ref="food"></property>
+    </bean>
+    <bean id="food" class="com.yangqihang.spring.Food">
+    </bean>
+</beans>

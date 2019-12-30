@@ -1,0 +1,167 @@
+﻿--查询部门编号为10的员工信息
+select * from emp where deptno = 10;
+--查询年薪大于3万的人员的姓名与部门编号
+select ename, deptno from emp where sal*12 > 30000;
+--查询佣金为null的人员姓名与工资
+select ename,sal from emp where comm is null;
+--查询工资大于1500且and含有佣金的人员姓名
+select ename from emp where sal >1500 and comm is not null;
+--查询工资大于1500或or含有佣金的人员姓名
+select ename from emp where sal >1500 or comm is not null;
+--查询姓名里面含有S员工信息 工资、名称
+select ename, sal from emp where ename like('%S%');
+--求姓名以J开头第二个字符O的员工的姓名与工资
+select ename, sal from emp where ename like('JO%');
+--求包含%的雇员姓名
+select ename from emp where ename like('%\%%') escape('\');
+--使用in查询部门名称为SALES和RESEARCH的雇员姓名、工资、部门编号
+select ename, sal, deptno
+  from emp
+ where deptno in (select deptno
+                    from dept
+                   where dname = 'SALES'
+                      or dname = 'RESEARCH');
+--使用exists查询部门名称为SALES和RESEARCH的雇员姓名、工资、部门编号
+select ename, sal, deptno
+  from emp e
+ where exists (select *
+          from dept d
+         where dname in ('SALES', 'RESEARCH')
+           and d.deptno = e.deptno);
+--1、使用基本查询语句.
+--(1)查询DEPT表显示所有部门名称.
+select dname from dept;
+--(2)查询EMP表显示所有雇员名及其全年收入(月收入=工资+补贴),处理NULL行,并指定列别名为"年收入"
+select ename,(sal+nvl(comm,0))*12 年收入 from emp;
+--(3)查询显示不存在雇员的所有部门号。
+select deptno from dept minus
+select deptno from emp;
+
+--2、限制查询数据
+--(1)查询EMP表显示工资超过2850的雇员姓名和工资。
+select ename, sal from emp where sal >2850;
+--(2)查询EMP表显示工资不在1500～2850之间的所有雇员及工资。
+select ename, sal from emp where  sal<1500 or sal>2850;
+--(3)查询EMP表显示代码为7566的雇员姓名及所在部门代码。
+select ename,deptno from emp where empno in(7566);
+--(4)查询EMP表显示部门10和30中工资超过1500的雇员名及工资。
+select ename, sal from emp where deptno in(10,30) and sal >1500;
+--(5)查询EMP表显示第2个字符为"A"的所有雇员名其工资。
+select ename, sal from emp where ename like('_A%'); 
+--(6)查询EMP表显示补助非空的所有雇员名及其补助。
+select ename, comm from emp where comm is not null;
+
+--3、排序数据
+--(1)查询EMP表显示所有雇员名、工资、雇佣日期，并以雇员名的升序进行排序。
+select ename, sal, hiredate from emp order by ename asc;
+--(2)查询EMP表显示在1981年2月1日到1981年5月1日之间雇佣的雇员名、岗位及雇佣日期，并以雇佣日期进行排序。
+select ename, job, hiredate
+  from emp
+ where to_char(hiredate, 'yyyy/mm/dd') between '1981/02/01' and '1981/05/01'
+ order by hiredate;
+--(3)查询EMP表显示获得补助的所有雇员名、工资及补助，并以工资升序和补助降序排序。
+select ename, sal, comm from emp where comm is not null order by sal asc, comm desc;
+
+--1、查询82年员工
+select * from emp where extract(YEAR from hiredate) = 1982; 
+--2、查询39年工龄的人员
+select *
+  from emp
+ where extract(YEAR from sysdate) - extract(YEAR from hiredate) = 39;
+--3、显示员工雇佣期 6 个月后下一个星期一的日期
+select ename, hiredate, next_day(add_months(hiredate, 6), '星期一') 日期
+  from emp;
+--4、找没有上级的员工，把mgr的字段信息输出为 "boss"
+select ename,nvl(to_char(mgr),'boss')from emp where mgr is null;
+--5、为所有人长工资，标准是：10部门长10%；20部门长15%；30部门长20%其他部门长18%
+select ename,
+       deptno,
+       sal,
+       case deptno
+         when 10 then
+          sal * 1.1
+         when 20 then
+          sal * 1.15
+         when 30 then
+          sal * 1.2
+         else
+          sal * 1.18
+       end 涨薪之后
+  from emp;
+--1、查询10号部门中编号最新入职的员工，工龄最长的员工的个人信息。
+select mm2.deptno, e1.ename, e1.hiredate
+  from emp e1,
+       (select e.deptno, max(e.hiredate) maxd, min(e.hiredate) mind
+          from emp e
+         group by e.deptno
+        having e.deptno = 10) mm2
+ where (e1.hiredate = mm2.mind or e1.hiredate = mm2.maxd)
+   and mm2.deptno = e1.deptno;
+--2、从‚software‛找到‘f’的位置，用‘*’左或右填充到15位，去除其中的‘a’。
+select instr('software', 'f'),
+       lpad('software', 15, '*'),
+       replace('software', 'a', '')
+  from dual;
+--4、写一个查询显示当前日期，列标题显示为Date。再显示六个月后的日期，下一个星期 日的日期，该月最后一天的日期。
+select sysdate "Date",
+       add_months(sysdate, 6),
+       next_day(sysdate, '星期日'),
+       last_day(sysdate)
+  from dual;
+--5、查询EMP表按管理者编号升序排列，如果管理者编号为空则把为空的在最前显示
+select * from emp order by mgr nulls first;
+--6、求部门平均薪水
+select deptno,avg(sal) from emp group by deptno;
+--7、按部门求出工资大于1300人员的 部门编号、平均工资、最小佣金、最大佣金,并且最大佣金大于100
+
+--8、找出每个部门的平均、最小、最大薪水
+select deptno,avg(sal),min(sal),max(sal) from emp group by deptno;
+--9、查询出雇员名，雇员所在部门名称， 工资等级。
+select e.ename, d.dname, s.grade
+  from emp e, dept d, salgrade s
+ where e.deptno = d.deptno
+   and sal between losal and hisal;
+
+--1．列出所有雇员的姓名及其上级的姓名。
+select e1.empno, e1.ename, e1.mgr, e2.empno, e2.ename
+  from emp e1
+  join emp e2
+    on e1.mgr = e2.empno;
+--2．列出入职日期早于其直接上级的所有雇员。
+select * from emp e1 join emp e2 on e1.mgr=e2.empno
+select t.e1n
+  from (select e1.ename e1n, e1.hiredate e1h, e2.ename e2n, e2.hiredate e2h
+          from emp e1
+          join emp e2
+            on e1.mgr = e2.empno) t
+ where t.e1h < t.e2h;
+--3．列出所有部门名称及雇员
+select d.dname, e.ename from emp e join dept d on e.deptno=d.deptno;
+--4．列出所有‚CLERK‛（办事员）的姓名及其部门名称。
+select * from emp e where e.job in('CLERK')
+select t.ename, t.job, d.dname
+  from dept d
+  join (select * from emp e where e.job in ('CLERK')) t
+    on t.deptno = d.deptno;
+--5．列出从事‚SALES‛（销售）工作的雇员的姓名，假定不知道销售部的部门编号。
+select e.ename,d.dname from emp e join dept d on e.deptno=d.deptno
+select t.ename
+  from (select e.ename, d.dname
+          from emp e
+          join dept d
+            on e.deptno = d.deptno) t
+ where t.dname in ('SALES');
+--6．列出在每个部门工作的雇员的数量以及其他信息。
+select deptno,count(1) from emp e group by deptno
+select * from dept d join (select deptno,count(1) 数量 from emp e group by deptno) t on t.deptno=d.deptno;
+select * from dept d join (select deptno,count(1) 数量 from emp e group by deptno) t using(deptno);
+--7．列出所有雇员的雇员名称、部门名称和薪金。
+select e.ename,d.dname,e.sal from emp e join dept d on e.deptno=d.deptno;
+--8.求出部门编号为20的雇员名、部门名、薪水等级
+select e.ename, d.dname, sg.grade
+  from emp e
+  join dept d
+    on e.deptno = d.deptno
+   and e.deptno = 20
+  join salgrade sg
+    on e.sal between sg.losal and sg.hisal;

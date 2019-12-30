@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户列表</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <style type="text/css">
+        .tip {
+            color: #e20411;
+            font-size: 14px;
+            display: none;
+        }
+
+        #role_hand:hover {
+            cursor: pointer;
+        }
+
+        .tipRole {
+            color: #e20411;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<!--导航栏 ↓-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index">首页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <!--    下拉单 ↓        -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expandzed="false">用户管理<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/list">用户列表</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">4</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--    下拉单 ↑        -->
+
+            <!--      搜索框 ↓      -->
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="员工的姓名">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <!--      搜索框 ↑     -->
+
+            <ul th:if="${session.account} == null" class="nav navbar-nav navbar-right">
+                <li><a href="/account/login">登录</a></li>
+                <li><a href="/account/register" target="_blank">注册</a></li>
+            </ul>
+
+            <ul th:if="${session.account} != null" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">欢迎您: [[${session.account.loginName}]]<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/profile">个人信息</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/account/logout">用户退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--导航栏 ↑-->
+
+<table class="table table-striped">
+    <tr>
+        <th>序号</th>
+        <th>ID</th>
+        <th>名称</th>
+        <th>密码</th>
+        <th>昵称</th>
+        <th>年龄</th>
+        <th>地区</th>
+        <th>权限</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="account : ${accPageInfo.list}">
+        <th th:text="${accountStat.count}+${accPageInfo.getPrePage() * 10}"></th>
+        <td th:text="${account.id}"></td>
+        <td th:text="${account.loginName}"></td>
+        <td th:text="${account.password}"></td>
+        <td th:text="${account.nickName}"></td>
+        <td th:text="${account.age}"></td>
+        <td th:text="${account.location}"></td>
+        <td>
+            <a id="role_hand" data-toggle="modal" data-target="#myModalRole" th:text="${account.role}"
+               th:onclick="'javascript:changeRole('+${account.id}+','+${account.role =='admin' ? 1:2}+');'"></a>
+        </td>
+        <td>
+            <a class="btn btn-danger" th:href="@{'javascript:deleteById('+${account.id}+');'}">删除</a>
+            <span class="btn btn-info" data-toggle="modal" data-target="#myModalPassword"
+                  th:onclick="'javascript:changeValue('+${account.id}');'+"
+                  th:if="${session.account.role == 'admin'}">修改密码</span>
+        </td>
+    </tr>
+</table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <!--    判断是否是第一页，是的话span标签显示，不是的话a标签显示    -->
+        <li th:if="${!accPageInfo.isIsFirstPage()}">
+            <a th:href="@{/account/list?pageNum=} + ${accPageInfo.getPrePage()}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="disabled" th:if="${accPageInfo.isIsFirstPage()}">
+            <span>
+                <span aria-hidden="true">&laquo;</span>
+            </span>
+        </li>
+
+        <li th:each="pageNum : ${accPageInfo.getNavigatepageNums()}"
+            th:class="${accPageInfo.getPageNum() == pageNum ? 'active':''}">
+            <a th:href="@{/account/list?pageNum=}+${pageNum}" th:text="${pageNum}"></a>
+        </li>
+
+        <!--    判断是否是最后一页，是的话span标签显示，不是的话a标签显示    -->
+        <li th:if="${!accPageInfo.isIsLastPage()}">
+            <a th:href="@{/account/list?pageNum=}+${accPageInfo.getNextPage()}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        <li class="disabled" th:if="${accPageInfo.isIsLastPage()}">
+            <span>
+                <span aria-hidden="true">&raquo;</span>
+            </span>
+        </li>
+
+    </ul>
+</nav>
+
+<!-- 修改密码模态框 -->
+<div class="modal fade" id="myModalPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">修改密码</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="text" class="form-control" id="id" disabled="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">新密码</label>
+                        <input type="text" class="form-control" id="newPassword" placeholder="请输入密码" autocomplete="off">
+                    </div>
+                    <p class="tip">密码不能为空</p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="save">保存</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 修改权限模态框 -->
+<div class="modal fade" id="myModalRole" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">权限修改</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="idRole">ID</label>
+                        <input type="text" class="form-control" id="idRole" disabled="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="role">权限</label>
+                        <input type="text" class="form-control" id="role" value="user" autocomplete="off">
+                    </div>
+                    <p class="tipRole">密码不能为空</p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="role_save">确认修改权限</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+<script type="text/javascript">
+
+    /**
+     * 删除密码操作
+     * @param id
+     */
+    function deleteById(id) {
+
+        //确认是否删除
+        var isDelete = confirm("确定要删除？")
+        if (!isDelete) {
+            return;
+        }
+
+        //异步ajax去访问带有json访问结果的controller
+        var url = "/account/deleteById";
+        var args = {id: id};
+
+        $.post(url, args, function (data) {
+            console.log(data);
+
+            if (data.code == 200) {
+                //删除成功
+                window.location.reload();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    /**
+     * 修改密码模态框ID的value和loginName的value
+     * @param id
+     */
+    function changeValue(id) {
+        $('#id').attr('value', id);
+    }
+
+    /**
+     * 修改密码操作
+     */
+    $('#save').click(function () {
+        var id = $('#id').val();
+        var password = $('#newPassword').val();
+
+        if ("" == password) {
+            $(".tip").html("密码不能为空");
+            $(".tip").css("display", "block");
+            return;
+        }
+
+        var url = "/account/update";
+        var args = {id: id, password: password};
+
+        $.post(url, args, function (data) {
+            if (data.code == 200) {
+                $(".tip").html(data.msg);
+                $(".tip").css("display", "block");
+
+                window.setTimeout("$('#myModalPassword').modal('hide')", 3000);
+                window.setTimeout("window.location.reload();", 3500);
+            } else {
+                $(".tip").html(data.msg);
+                $(".tip").css("display", "block");
+            }
+
+            console.log(data);
+        });
+    });
+
+    /**
+     * 修改权限模态框的属性
+     * @param id
+     * @param role
+     */
+    function changeRole(id, role) {
+        $('#idRole').attr('value', id);
+
+        //传输时将admin传输为1，user为2，判断数字，更改value的值
+        if (role == 1) {
+            $('#role').attr('value', "admin");
+        } else {
+            $('#role').attr('value', "user");
+        }
+    }
+
+    /**
+     *
+     */
+    $('#role_save').click(function () {
+        var id = $('#idRole').val();
+        var role = $('#role').val();
+
+        if ("" == role) {
+            $(".tipRole").html("权限未设置");
+            $(".tipRole").css("display", "block");
+            return;
+        }
+
+        var url = "/account/updateRole";
+        var args = {id: id, role: role};
+
+        $.post(url, args, function (data) {
+            if (data.code == 200) {
+                $(".tipRole").html(data.msg);
+                $(".tipRole").css("display", "block");
+
+                window.setTimeout("$('#myModalRole').modal('hide')", 3000);
+                window.setTimeout("window.location.reload();", 3500);
+            } else {
+                $(".tipRole").html(data.msg);
+                $(".tipRole").css("display", "block");
+            }
+
+            console.log(data);
+        });
+    });
+</script>

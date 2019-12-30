@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 对应到接口上就不需要实例化了 -->
+<mapper namespace="com.yangqihang.mapper.AccountMapper">
+
+<!--  entity对象和表之间的字段和属性的映射关系,type是实体类对象，id可以自己命名  -->
+    <resultMap id="BaseResultMap" type="com.yangqihang.entity.Account">
+
+<!--    column是数据库表的字段名称，property对象的属性是对应的实体类里的名称    -->
+        <result column="login_name" property="loginName"></result>
+        <result column="password" property="password"></result>
+    </resultMap>
+
+<!--  <select id="">一个select的实现,id里面是方法名称  -->
+    <select id="findAll" resultMap="BaseResultMap">
+        select * from account
+    </select>
+    
+</mapper>

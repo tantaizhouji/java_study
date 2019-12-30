@@ -5,6 +5,7 @@ spring:
     password: 123456
 mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.yangqihang.entity
 logging:
   level:
     com:

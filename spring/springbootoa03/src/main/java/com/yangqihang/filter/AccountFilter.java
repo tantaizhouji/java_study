@@ -12,7 +12,7 @@ import java.io.IOException;
 @WebFilter(urlPatterns = "/*")
 public class AccountFilter implements Filter {
 
-    private final String[] IGNORE_URI = {"/css/", "/js/", "/images/", "/index", "/account/"};
+    private final String[] IGNORE_URI = {"/css/", "/js/", "/images/", "/index", "/account/","/favicon.ico"};
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -29,7 +29,7 @@ public class AccountFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         //获取当前访问的URI
         String uri = httpRequest.getRequestURI();
-        System.out.println("uri1: "+uri);
+        System.out.println("uri: "+uri);
         //判断URI是否存在忽略组里面
         Boolean exist = checkURI(uri);
 

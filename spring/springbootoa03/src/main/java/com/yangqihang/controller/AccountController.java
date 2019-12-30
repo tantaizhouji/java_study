@@ -122,6 +122,13 @@ public class AccountController {
         return stat;
     }
 
+    /**
+     * 修改密码
+     *
+     * @param id
+     * @param password
+     * @return
+     */
     @RequestMapping("/update")
     @ResponseBody
     public RespStat update(int id, String password) {

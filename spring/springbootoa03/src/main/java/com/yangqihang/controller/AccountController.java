@@ -1,14 +1,11 @@
 package com.yangqihang.controller;
 
-import com.github.pagehelper.PageInfo;
 import com.yangqihang.RespStat;
 import com.yangqihang.entity.Account;
 import com.yangqihang.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,23 +17,6 @@ public class AccountController {
 
     @Autowired
     private AccountService accSrv;
-
-    /**
-     * 跳转到用户列表
-     *
-     * @param pageNum  显示用户列表第几页
-     * @param pageSize 显示用户列表每页显示数量
-     * @param model
-     * @return 跳转到templates目录下的/account/list
-     */
-    @RequestMapping("/list")
-    public String list(@RequestParam(defaultValue = "1") int pageNum, @RequestParam(defaultValue = "10") int pageSize, Model model) {
-        PageInfo<Account> accPageInfo = accSrv.findAll(pageNum, pageSize);
-
-        model.addAttribute("accPageInfo", accPageInfo);
-
-        return "account/list";
-    }
 
     /**
      * 跳转到用户登录页面

@@ -1,10 +1,12 @@
 package com.yangqihang.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * account
- * @author 
+ *
+ * @author
  */
 public class Account implements Serializable {
     private Integer id;
@@ -18,6 +20,12 @@ public class Account implements Serializable {
     private Integer age;
 
     private String location;
+
+    //角色列表
+    private List<Role> roleList;
+
+    //权限列表
+    private List<Permission> perList;
 
     private static final long serialVersionUID = 1L;
 
@@ -69,6 +77,22 @@ public class Account implements Serializable {
         this.location = location;
     }
 
+    public List<Role> getRoleList() {
+        return roleList;
+    }
+
+    public void setRoleList(List<Role> roleList) {
+        this.roleList = roleList;
+    }
+
+    public List<Permission> getPerList() {
+        return perList;
+    }
+
+    public void setPerList(List<Permission> perList) {
+        this.perList = perList;
+    }
+
     @Override
     public boolean equals(Object that) {
         if (this == that) {
@@ -82,11 +106,11 @@ public class Account implements Serializable {
         }
         Account other = (Account) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-            && (this.getLoginName() == null ? other.getLoginName() == null : this.getLoginName().equals(other.getLoginName()))
-            && (this.getPassword() == null ? other.getPassword() == null : this.getPassword().equals(other.getPassword()))
-            && (this.getNickName() == null ? other.getNickName() == null : this.getNickName().equals(other.getNickName()))
-            && (this.getAge() == null ? other.getAge() == null : this.getAge().equals(other.getAge()))
-            && (this.getLocation() == null ? other.getLocation() == null : this.getLocation().equals(other.getLocation()));
+                && (this.getLoginName() == null ? other.getLoginName() == null : this.getLoginName().equals(other.getLoginName()))
+                && (this.getPassword() == null ? other.getPassword() == null : this.getPassword().equals(other.getPassword()))
+                && (this.getNickName() == null ? other.getNickName() == null : this.getNickName().equals(other.getNickName()))
+                && (this.getAge() == null ? other.getAge() == null : this.getAge().equals(other.getAge()))
+                && (this.getLocation() == null ? other.getLocation() == null : this.getLocation().equals(other.getLocation()));
     }
 
     @Override
@@ -115,7 +139,11 @@ public class Account implements Serializable {
         sb.append(", age=").append(age);
         sb.append(", location=").append(location);
         sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append(", roleList=").append(roleList);
+        sb.append(", perList=").append(perList);
         sb.append("]");
         return sb.toString();
     }
+
+
 }

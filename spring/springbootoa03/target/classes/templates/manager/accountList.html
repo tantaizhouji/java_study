@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>用户列表</title>
+    <title>员工列表</title>
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <script th:src="@{/js/jquery-3.4.1.js}"></script>
     <script th:src="@{/js/bootstrap.min.js}"></script>
@@ -43,15 +43,11 @@
                 <li><a href="#">Link</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expandzed="false">用户管理<span class="caret"></span></a>
+                       aria-expandzed="false">人力资源<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/account/list">用户列表</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">4</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">5</a></li>
+                        <li class="active"><a href="/manager/accountList">员工列表</a></li>
+                        <li><a href="/manager/roleList">角色列表</a></li>
+                        <li><a href="/manager/permissionList">权限列表</a></li>
                     </ul>
                 </li>
             </ul>
@@ -101,18 +97,18 @@
         <th>地区</th>
         <th>操作</th>
     </tr>
-    <tr th:each="account : ${accPageInfo.list}">
-        <th th:text="${accountStat.count}+${accPageInfo.getPrePage() * 10}"></th>
-        <td th:text="${account.id}"></td>
-        <td th:text="${account.loginName}"></td>
-        <td th:text="${account.password}"></td>
-        <td th:text="${account.nickName}"></td>
-        <td th:text="${account.age}"></td>
-        <td th:text="${account.location}"></td>
+    <tr th:each="item : ${accPageInfo.list}">
+        <th th:text="${itemStat.count}+${accPageInfo.getPrePage() * 10}"></th>
+        <td th:text="${item.id}"></td>
+        <td th:text="${item.loginName}"></td>
+        <td th:text="${item.password}"></td>
+        <td th:text="${item.nickName}"></td>
+        <td th:text="${item.age}"></td>
+        <td th:text="${item.location}"></td>
         <td>
-            <a class="btn btn-danger" th:href="@{'javascript:deleteById('+${account.id}+');'}">删除</a>
+            <a class="btn btn-danger" th:href="@{'javascript:deleteById('+${item.id}+');'}">删除</a>
             <span class="btn btn-info" data-toggle="modal" data-target="#myModal"
-                  th:onclick="'javascript:changeValue('+${account.id}+');'">修改密码</span>
+                  th:onclick="'javascript:changeValue('+${item.id}+');'">修改密码</span>
         </td>
     </tr>
 </table>
@@ -121,7 +117,7 @@
     <ul class="pagination">
         <!--    判断是否是第一页，是的话span标签显示，不是的话a标签显示    -->
         <li th:if="${!accPageInfo.isIsFirstPage()}">
-            <a th:href="@{/account/list?pageNum=} + ${accPageInfo.getPrePage()}" aria-label="Previous">
+            <a th:href="@{/manager/accountList?pageNum=} + ${accPageInfo.getPrePage()}" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
             </a>
         </li>
@@ -133,12 +129,12 @@
 
         <li th:each="pageNum : ${accPageInfo.getNavigatepageNums()}"
             th:class="${accPageInfo.getPageNum() == pageNum ? 'active':''}">
-            <a th:href="@{/account/list?pageNum=}+${pageNum}" th:text="${pageNum}"></a>
+            <a th:href="@{/manager/accountList?pageNum=}+${pageNum}" th:text="${pageNum}"></a>
         </li>
 
         <!--    判断是否是最后一页，是的话span标签显示，不是的话a标签显示    -->
         <li th:if="${!accPageInfo.isIsLastPage()}">
-            <a th:href="@{/account/list?pageNum=}+${accPageInfo.getNextPage()}" aria-label="Next">
+            <a th:href="@{/manager/accountList?pageNum=}+${accPageInfo.getNextPage()}" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
             </a>
         </li>
@@ -205,7 +201,7 @@
 <script type="text/javascript">
 
     /**
-     * 删除密码操作
+     * 删除操作
      * @param id
      */
     function deleteById(id) {

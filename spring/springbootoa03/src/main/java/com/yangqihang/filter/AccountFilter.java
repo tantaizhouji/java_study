@@ -29,7 +29,6 @@ public class AccountFilter implements Filter {
         HttpServletResponse httpResponse = (HttpServletResponse) response;
         //获取当前访问的URI
         String uri = httpRequest.getRequestURI();
-        System.out.println("uri: "+uri);
         //判断URI是否存在忽略组里面
         Boolean exist = checkURI(uri);
 

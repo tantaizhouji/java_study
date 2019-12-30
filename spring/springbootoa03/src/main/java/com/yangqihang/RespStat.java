@@ -4,12 +4,12 @@ public class RespStat {
 
     private int code;
     private String msg;
-    private String data;
+    private Object data;
 
     public RespStat() {
     }
 
-    public RespStat(int code, String msg, String data) {
+    public RespStat(int code, String msg, Object data) {
         this.code = code;
         this.msg = msg;
         this.data = data;
@@ -31,7 +31,7 @@ public class RespStat {
         this.msg = msg;
     }
 
-    public String getData() {
+    public Object getData() {
         return data;
     }
 
@@ -50,5 +50,9 @@ public class RespStat {
 
     public static RespStat build(int code, String msg) {
         return new RespStat(code, msg, "null");
+    }
+
+    public static RespStat build(int code, String msg, Object data) {
+        return new RespStat(code, msg, data);
     }
 }

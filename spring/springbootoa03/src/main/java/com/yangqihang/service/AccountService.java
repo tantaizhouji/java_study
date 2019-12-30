@@ -44,6 +44,7 @@ public class AccountService {
      * @return 分页好的结果
      */
     public PageInfo<Account> findAll(int pageNum, int pageSize) {
+
         //分页操作
         PageHelper.startPage(pageNum, pageSize);
 
@@ -79,8 +80,8 @@ public class AccountService {
     }
 
     public RespStat update(int id, String password) {
-        if("".equals(password)) {
-            return RespStat.build(502,"密码不能为空");
+        if ("".equals(password)) {
+            return RespStat.build(502, "密码不能为空");
         }
 
         //根据ID获得数据库里的数据

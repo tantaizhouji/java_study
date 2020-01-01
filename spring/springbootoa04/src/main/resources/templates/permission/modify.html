@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加权限</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <style>
+        form {
+            padding-top: 100px;
+            margin: auto;
+            width: 40%;
+        }
+
+        .tip {
+            color: #e20411;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <div class="form-group">
+        <label>ID</label>
+        <input type="text" class="form-control" id="id" disabled="true" th:value="${permission.id}">
+    </div>
+    <div class="form-group">
+        <label for="name">*名称</label>
+        <input type="text" class="form-control" id="name" placeholder="请输入名称" th:value="${permission.name}">
+    </div>
+    <div class="form-group">
+        <label for="uri">*uri</label>
+        <input type="text" class="form-control" id="uri" placeholder="请输入uri" th:value="${permission.uri}">
+    </div>
+    <div>
+        <label>权限</label><br>
+        <input type="checkbox" id="c" th:checked="${permission.c}">C
+        <input type="checkbox" id="r" th:checked="${permission.r}">R
+        <input type="checkbox" id="u" th:checked="${permission.u}">U
+        <input type="checkbox" id="d" th:checked="${permission.d}">D
+    </div>
+    <div class="btn btn-default" id="btn_register">修改</div>
+    <p class="tip">名称或uri不能为空</p>
+</form>
+
+</body>
+</html>
+<script type="text/javascript">
+
+    $(function () {
+        $("#btn_register").click(function () {
+
+            var id = $("#id").val();
+            var name = $("#name").val();
+            var uri = $("#uri").val();
+            var c = $("#c").is(":checked");
+            var r = $("#r").is(":checked");
+            var u = $("#u").is(":checked");
+            var d = $("#d").is(":checked");
+
+            if (name == "" || uri == "") {
+                $(".tip").html("名称或uri不能为空")
+                $(".tip").css("display", "block");
+                return;
+            } else {
+                var url = "/api/v1/manager/permission/modify";
+                var args = {id: id, name: name, uri: uri, c: c, r: r, u: u, d: d};
+
+                $.post(url, args, function (data) {
+                    if (data.code == 200) {
+
+                        $(".tip").html(data.msg);
+                        $(".tip").css("display", "block");
+
+                        // window.location.href="/manager/permissionList";
+                        window.setTimeout("window.location.href='/manager/permissionList'", 3000);
+                    } else {
+                        $(".tip").html(data.msg);
+                        $(".tip").css("display", "block");
+                    }
+
+                    console.log(data)
+                });
+            }
+        })
+    })
+</script>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>权限列表</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+
+<body>
+<!--导航栏 ↓-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index">首页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <!--    下拉单 ↓        -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expandzed="false">人力资源<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/manager/accountList">员工列表</a></li>
+                        <li><a href="/manager/roleList">角色列表</a></li>
+                        <li class="active"><a href="/manager/permissionList">权限列表</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--    下拉单 ↑        -->
+
+            <!--      搜索框 ↓      -->
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="员工的姓名">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <!--      搜索框 ↑     -->
+
+            <ul th:if="${session.account} == null" class="nav navbar-nav navbar-right">
+                <li><a href="/account/login">登录</a></li>
+                <li><a href="/account/register" target="_blank">注册</a></li>
+            </ul>
+
+            <ul th:if="${session.account} != null" class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">欢迎您: [[${session.account.loginName}]]<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/profile">个人信息</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/account/logout">用户退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--导航栏 ↑-->
+
+<a class="btn btn-info" href="/permission/add">添加权限</a>
+
+<table class="table table-striped">
+    <tr>
+        <th>序号</th>
+        <th>ID</th>
+        <th>URI</th>
+        <th>NAME</th>
+        <th>C</th>
+        <th>R</th>
+        <th>U</th>
+        <th>D</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="item : ${perPageInfo.list}">
+        <th th:text="${itemStat.count}+${perPageInfo.getPrePage() * 10}"></th>
+        <td th:text="${item.id}"></td>
+        <td th:text="${item.uri}"></td>
+        <td th:text="${item.name}"></td>
+        <td th:text="${item.c}"></td>
+        <td th:text="${item.r}"></td>
+        <td th:text="${item.u}"></td>
+        <td th:text="${item.d}"></td>
+        <td>
+            <a class="btn btn-danger" th:href="@{'javascript:deleteById('+${item.id}+');'}">删除</a>
+            <a class="btn btn-info" th:href="@{'javascript:modify('+${item.id}+');'}">修改</a>
+        </td>
+    </tr>
+</table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <!--    判断是否是第一页，是的话span标签显示，不是的话a标签显示    -->
+        <li th:if="${!perPageInfo.isIsFirstPage()}">
+            <a th:href="@{/manager/permissionList?pageNum=} + ${perPageInfo.getPrePage()}" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li class="disabled" th:if="${perPageInfo.isIsFirstPage()}">
+            <span>
+                <span aria-hidden="true">&laquo;</span>
+            </span>
+        </li>
+
+        <li th:each="pageNum : ${perPageInfo.getNavigatepageNums()}"
+            th:class="${perPageInfo.getPageNum() == pageNum ? 'active':''}">
+            <a th:href="@{/manager/permissionList?pageNum=}+${pageNum}" th:text="${pageNum}"></a>
+        </li>
+
+        <!--    判断是否是最后一页，是的话span标签显示，不是的话a标签显示    -->
+        <li th:if="${!perPageInfo.isIsLastPage()}">
+            <a th:href="@{/manager/permissionList?pageNum=}+${perPageInfo.getNextPage()}" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+        <li class="disabled" th:if="${perPageInfo.isIsLastPage()}">
+            <span>
+                <span aria-hidden="true">&raquo;</span>
+            </span>
+        </li>
+
+    </ul>
+</nav>
+
+</body>
+
+</html>
+<script>
+
+    /**
+     * 删除事件
+     * @param id permissionId
+     */
+    function deleteById(id) {
+        var url = "/api/v1/manager/permission/deleteById";
+        var args = {id: id};
+
+        $.post(url, args, function (data) {
+            console.log(data);
+
+            if (data.code == 200) {
+                //删除成功
+                window.location.reload();
+            } else {
+                alert(data.msg);
+            }
+        });
+    }
+
+    /**
+     * 点击跳转修改页面
+     * @param id
+     */
+    function modify(id) {
+        var url = "/permission/modify?id="
+        window.location.href = url + id;
+    }
+</script>

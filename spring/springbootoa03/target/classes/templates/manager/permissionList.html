@@ -147,6 +147,11 @@
 
 </html>
 <script>
+
+    /**
+     * 删除事件
+     * @param id permissionId
+     */
     function deleteById(id) {
         var url = "/permission/deleteById";
         var args = {id: id};
@@ -161,5 +166,10 @@
                 alert(data.msg);
             }
         });
+    }
+
+    function modify(id) {
+        var url = "/permission/modify?id="
+        window.location.href = url + id;
     }
 </script>

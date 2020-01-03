@@ -1,834 +1,1245 @@
-[13:52:20,330] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
-[13:52:20,373] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> com.tinygame.herostory.cmdHandler.GetRankCmdHandler
-[13:52:20,375] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> com.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
-[13:52:20,377] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> com.tinygame.herostory.cmdHandler.UserLoginCmdHandler
-[13:52:20,378] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> com.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
-[13:52:20,379] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> com.tinygame.herostory.cmdHandler.UserAttkCmdHandler
-[13:52:20,381] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> com.tinygame.herostory.cmdHandler.UserEntryCmdHandler
-[13:52:20,381] [INFO] GameMsgRecognizer.init --> ==== 完成 MsgBody 和 MsgCode 的关联 ====
-[13:52:20,409] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankResult <==> 18
-[13:52:20,410] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> 17
-[13:52:20,412] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroResult <==> 16
-[13:52:20,413] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroCmd <==> 15
-[13:52:20,415] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginResult <==> 14
-[13:52:20,416] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> 13
-[13:52:20,417] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
-[13:52:20,419] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
-[13:52:20,421] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
-[13:52:20,422] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
-[13:52:20,423] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
-[13:52:20,425] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
-[13:52:20,426] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
-[13:52:20,427] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
-[13:52:20,429] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
-[13:52:20,431] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
-[13:52:20,433] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
-[13:52:20,434] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
-[13:52:20,435] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
-[13:52:21,842] [INFO] ServerMain.main --> 服务器启动成功!
-[13:59:38,361] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
-[13:59:38,397] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> com.tinygame.herostory.cmdHandler.GetRankCmdHandler
-[13:59:38,398] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> com.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
-[13:59:38,398] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> com.tinygame.herostory.cmdHandler.UserLoginCmdHandler
-[13:59:38,399] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> com.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
-[13:59:38,400] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> com.tinygame.herostory.cmdHandler.UserAttkCmdHandler
-[13:59:38,401] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> com.tinygame.herostory.cmdHandler.UserEntryCmdHandler
-[13:59:38,402] [INFO] GameMsgRecognizer.init --> ==== 完成 MsgBody 和 MsgCode 的关联 ====
-[13:59:38,421] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankResult <==> 18
-[13:59:38,422] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> 17
-[13:59:38,423] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroResult <==> 16
-[13:59:38,424] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroCmd <==> 15
-[13:59:38,425] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginResult <==> 14
-[13:59:38,426] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> 13
-[13:59:38,427] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
-[13:59:38,428] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
-[13:59:38,429] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
-[13:59:38,430] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
-[13:59:38,431] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
-[13:59:38,432] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
-[13:59:38,433] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
-[13:59:38,434] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
-[13:59:38,435] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
-[13:59:38,436] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
-[13:59:38,437] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
-[13:59:38,438] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
-[13:59:38,439] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
-[13:59:39,798] [INFO] ServerMain.main --> 服务器启动成功!
-[14:00:17,149] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "a"
+[20:21:37,755] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
+[20:21:37,798] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> com.tinygame.herostory.cmdHandler.GetRankCmdHandler
+[20:21:37,799] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> com.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
+[20:21:37,800] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> com.tinygame.herostory.cmdHandler.UserLoginCmdHandler
+[20:21:37,800] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> com.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
+[20:21:37,803] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> com.tinygame.herostory.cmdHandler.UserAttkCmdHandler
+[20:21:37,805] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> com.tinygame.herostory.cmdHandler.UserEntryCmdHandler
+[20:21:37,805] [INFO] GameMsgRecognizer.init --> ==== 完成 MsgBody 和 MsgCode 的关联 ====
+[20:21:37,825] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankResult <==> 18
+[20:21:37,826] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> 17
+[20:21:37,827] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroResult <==> 16
+[20:21:37,828] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroCmd <==> 15
+[20:21:37,829] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginResult <==> 14
+[20:21:37,830] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> 13
+[20:21:37,831] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
+[20:21:37,832] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
+[20:21:37,834] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
+[20:21:37,835] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
+[20:21:37,836] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
+[20:21:37,837] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
+[20:21:37,838] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
+[20:21:37,839] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
+[20:21:37,840] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
+[20:21:37,841] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
+[20:21:37,842] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
+[20:21:37,843] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
+[20:21:37,844] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
+[20:21:39,241] [INFO] ServerMain.main --> 服务器启动成功!
+[20:21:42,251] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:22:11,907] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:22:27,874] [ERROR] MQConsumer.init --> org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to [192.168.74.111:9876] failed
+java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to [192.168.74.111:9876] failed
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:681)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:511)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.updateTopicSubscribeInfoWhenSubscriptionChanged(DefaultMQPushConsumerImpl.java:867)
+	at org.apache.rocketmq.client.impl.consumer.DefaultMQPushConsumerImpl.start(DefaultMQPushConsumerImpl.java:648)
+	at org.apache.rocketmq.client.consumer.DefaultMQPushConsumer.start(DefaultMQPushConsumer.java:693)
+	at com.tinygame.herostory.mq.MQConsumer.init(MQConsumer.java:57)
+	at com.tinygame.herostory.RankApp.main(RankApp.java:25)
+Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to [192.168.74.111:9876] failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.getAndCreateNameserverChannel(NettyRemotingClient.java:441)
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.getAndCreateChannel(NettyRemotingClient.java:396)
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:365)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1369)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1359)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:624)
+	... 6 more
+[20:22:27,875] [INFO] RankApp.main --> 排行榜应用程序启动成功!
+[20:22:41,907] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:22:48,862] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "1"
 password: "1"
 
-[14:00:17,149] [INFO] UserLoginCmdHandler.handle --> userName = a, password = 1
-[14:00:17,156] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
-[14:00:27,259] [ERROR] LoginService$AsyncGetUserByName.doAsync --> 
-### Error querying database.  Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-### The error may exist in com/tinygame/herostory/login/db/UserDao.xml
-### The error may involve com.tinygame.herostory.login.db.UserDao.getUserByName
-### The error occurred while executing a query
-### Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-org.apache.ibatis.exceptions.PersistenceException: 
-### Error querying database.  Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-### The error may exist in com/tinygame/herostory/login/db/UserDao.xml
-### The error may involve com.tinygame.herostory.login.db.UserDao.getUserByName
-### The error occurred while executing a query
-### Cause: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
-	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
-	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:93)
-	at com.sun.proxy.$Proxy7.getUserByName(Unknown Source)
-	at com.tinygame.herostory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:152)
+[20:22:48,862] [INFO] UserLoginCmdHandler.handle --> userName = 1, password = 1
+[20:22:48,868] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
+[20:22:49,879] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "1"
+password: "1"
+
+[20:22:49,879] [INFO] UserLoginCmdHandler.handle --> userName = 1, password = 1
+[20:22:50,095] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "1"
+password: "1"
+
+[20:22:50,095] [INFO] UserLoginCmdHandler.handle --> userName = 1, password = 1
+[20:22:51,002] [ERROR] LoginService.updateUserBasicInfoInRedis --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.login.LoginService.updateUserBasicInfoInRedis(LoginService.java:80)
+	at com.tinygame.herostory.login.LoginService.access$100(LoginService.java:17)
+	at com.tinygame.herostory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:173)
 	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906)
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831)
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
-	at java.sql.DriverManager.getConnection(DriverManager.java:664)
-	at java.sql.DriverManager.getConnection(DriverManager.java:208)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:221)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.doGetConnection(UnpooledDataSource.java:216)
-	at org.apache.ibatis.datasource.unpooled.UnpooledDataSource.getConnection(UnpooledDataSource.java:95)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.popConnection(PooledDataSource.java:422)
-	at org.apache.ibatis.datasource.pooled.PooledDataSource.getConnection(PooledDataSource.java:89)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:138)
-	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:60)
-	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
-	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
-	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
-	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
-	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
-	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
-	... 12 more
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850)
-	... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 11 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
 	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
 	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
 	at java.net.Socket.connect(Socket.java:606)
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
-	... 35 more
-[14:00:27,262] [ERROR] UserLoginCmdHandler.lambda$handle$0 --> 用户登录失败, userName = a
-[14:00:59,991] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
-password: "2"
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 18 more
+[20:22:51,004] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
+[20:22:51,004] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[20:22:51,004] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 4, userName = 1
+[20:22:53,005] [ERROR] LoginService.updateUserBasicInfoInRedis --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.login.LoginService.updateUserBasicInfoInRedis(LoginService.java:80)
+	at com.tinygame.herostory.login.LoginService.access$100(LoginService.java:17)
+	at com.tinygame.herostory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:173)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 11 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 18 more
+[20:22:53,005] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[20:22:53,005] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
+[20:22:53,005] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 4, userName = 1
+[20:22:53,601] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[20:22:53,604] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:22:53,607] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[20:22:53,608] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:22:55,008] [ERROR] LoginService.updateUserBasicInfoInRedis --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.login.LoginService.updateUserBasicInfoInRedis(LoginService.java:80)
+	at com.tinygame.herostory.login.LoginService.access$100(LoginService.java:17)
+	at com.tinygame.herostory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:173)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 11 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 18 more
+[20:22:55,008] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[20:22:55,008] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 4, userName = 1
+[20:22:55,022] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[20:22:55,022] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:23:00,833] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 46.15386
+moveToPosY: 22.564102
 
-[14:00:59,991] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 2
-[14:00:59,991] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
-[14:01:00,084] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
-[14:01:00,084] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
-[14:01:00,959] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
-[14:01:00,962] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
-[14:01:01,374] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "a"
+[20:23:01,023] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 25.598848
+moveFromPosY: 23.465473
+moveToPosX: 10.598301
+moveToPosY: -51.965813
+
+[20:23:01,207] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 8.525311
+moveFromPosY: -0.0011520939
+moveToPosX: -1.0256308
+moveToPosY: -62.905983
+
+[20:23:01,377] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -2.1400325
+moveFromPosY: -21.33376
+moveToPosX: -46.153835
+moveToPosY: -51.965813
+
+[20:23:01,553] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -25.606272
+moveFromPosY: -44.800003
+moveToPosX: -89.23076
+moveToPosY: -32.136753
+
+[20:23:01,711] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -44.80589
+moveFromPosY: -32.000134
+moveToPosX: -106.324776
+moveToPosY: -21.880342
+
+[20:23:02,000] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:02,159] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:10,567] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:11,906] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:23:28,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
 password: "1"
 
-[14:01:01,374] [INFO] UserLoginCmdHandler.handle --> userName = a, password = 1
-[14:01:01,374] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
-[14:01:01,376] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
-[14:01:01,376] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 1, userName = a
-[14:01:01,426] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
-[14:01:01,427] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
-[14:01:02,287] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -100.95239
-moveToPosY: 13.333333
-
-[14:01:02,502] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -27.726847
-moveFromPosY: 14.932608
-moveToPosX: -133.33334
-
-[14:01:02,702] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -53.33196
-moveFromPosY: -0.006912433
-moveToPosX: -129.52382
-moveToPosY: -9.523809
-
-[14:01:03,502] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -130.12083
-moveFromPosY: -10.673408
-moveToPosX: -89.52383
-moveToPosY: -5.714286
-
-[14:01:05,686] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -87.44973
-moveFromPosY: -4.2736635
-moveToPosX: -81.90478
-moveToPosY: -11.428572
-
-[14:01:06,390] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -81.03923
-moveFromPosY: -12.801407
-moveToPosX: -95.23811
-moveToPosY: -17.142857
-
-[14:01:06,574] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -95.974144
-moveFromPosY: -19.207808
-moveToPosX: -100.95239
-moveToPosY: -13.333333
-
-[14:01:06,782] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -102.368004
-moveFromPosY: -12.8139515
-moveToPosX: -97.14287
-moveToPosY: 3.8095238
-
-[14:01:06,967] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -95.968636
-moveFromPosY: 4.25664
-moveToPosX: -68.57144
-
-[14:01:07,231] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:07,231] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:07,630] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:07,630] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:07,838] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:07,838] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:08,023] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:08,023] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:08,223] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:08,223] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:08,694] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:08,694] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:09,077] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:09,078] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:09,478] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:09,478] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:09,878] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:09,878] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:10,358] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:10,359] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:01:11,742] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:01:11,743] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:15:18,653] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[14:15:18,653] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[14:59:39,925] [INFO] RankApp.main --> 排行榜应用程序启动成功!
-[14:59:39,946] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:00:12,346] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:00:12,346] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:00:12,352] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:00:13,720] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:00:13,720] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:00:13,725] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:00:14,505] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:00:14,505] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:00:14,510] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:00:14,681] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:00:14,681] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:00:14,684] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:00:14,873] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:00:14,873] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:00:14,877] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:00:15,041] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:00:15,041] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:00:15,044] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:02:02,025] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:02:03,097] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:02:03,097] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:02:03,100] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:02:07,009] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:02:07,552] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:09:36,498] [INFO] RankApp.main --> 排行榜应用程序启动成功!
-[15:10:45,482] [INFO] RankApp.main --> 排行榜应用程序启动成功!
-[15:11:00,048] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:00,048] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:00,057] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:18,800] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:11:20,400] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:20,400] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:20,404] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:22,744] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:11:23,951] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:11:25,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:25,928] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:25,931] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:26,695] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:11:27,751] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:27,751] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:27,754] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:28,056] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:28,056] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:28,060] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:28,208] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:28,208] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:28,212] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:28,528] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:28,528] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:28,531] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:28,687] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:28,688] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:28,691] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:11:28,952] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -68.240234
-moveFromPosY: -0.004224002
-moveToPosX: -118.09525
-moveToPosY: -137.14285
-
-[15:11:29,104] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -87.44036
-moveFromPosY: -19.204353
-moveToPosX: -150.47621
-moveToPosY: -148.57143
-
-[15:11:29,288] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -110.90596
-moveFromPosY: -42.669952
-moveToPosX: -158.09525
-moveToPosY: -148.57143
-
-[15:11:29,496] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:11:29,831] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:11:29,983] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:11:30,447] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:11:31,560] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:11:48,544] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "c"
-password: "3"
-
-[15:11:48,544] [INFO] UserLoginCmdHandler.handle --> userName = c, password = 3
-[15:11:48,544] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor3
-[15:11:48,545] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
-[15:11:48,545] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 3, userName = c
-[15:11:48,594] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
-[15:11:48,595] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
-[15:11:49,416] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -19.047634
-moveToPosY: -57.142857
-
-[15:11:49,648] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -19.213186
-moveFromPosY: -29.859585
-moveToPosX: 32.38094
-moveToPosY: -80.0
-
-[15:11:49,840] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 4.259453
-moveFromPosY: -53.33223
-moveToPosX: 32.38094
-moveToPosY: -89.52381
-
-[15:11:50,032] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 29.85344
-moveFromPosY: -78.926216
-moveToPosX: 28.571415
-moveToPosY: -100.95238
-
-[15:11:50,535] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 27.714943
-moveFromPosY: -102.3977
-moveToPosX: 79.999985
-moveToPosY: -36.190475
-
-[15:11:50,719] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 51.184765
-moveFromPosY: -78.92789
-moveToPosX: 79.999985
-moveToPosY: -30.47619
-
-[15:11:50,904] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 74.65228
-moveFromPosY: -55.460365
-moveToPosX: 70.47617
-moveToPosY: -22.857143
-
-[15:11:51,080] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 70.3863
-moveFromPosY: -31.993483
-moveToPosX: 70.47617
-moveToPosY: -22.857143
-
-[15:11:51,256] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 72.51801
-moveFromPosY: -21.327116
-moveToPosX: 64.76189
-moveToPosY: -20.952381
-
-[15:11:51,623] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:51,624] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:51,628] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:11:52,216] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 63.976574
-moveFromPosY: -19.180428
-moveToPosX: 104.76189
-moveToPosY: -5.714286
-
-[15:11:52,527] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 104.50201
-moveFromPosY: -4.2497396
-moveToPosX: 62.85713
-moveToPosY: -5.714286
-
-[15:11:52,927] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:52,927] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:52,935] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:11:53,240] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 61.828495
-moveFromPosY: -6.3902836
-moveToPosX: 15.238081
-moveToPosY: -91.42857
-
-[15:11:53,432] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 36.2308
-moveFromPosY: -31.98798
-moveToPosX: -7.619062
-moveToPosY: -114.28571
-
-[15:11:53,767] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -6.434546
-moveFromPosY: -74.65333
-moveToPosX: -41.904778
-moveToPosY: -127.61905
-
-[15:11:53,943] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -29.896433
-moveFromPosY: -98.11522
-moveToPosX: -55.23811
-moveToPosY: -133.33333
-
-[15:11:54,160] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -55.488495
-moveFromPosY: -125.85462
-moveToPosX: -64.76192
-moveToPosY: -135.2381
-
-[15:11:54,480] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:54,480] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:54,847] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:54,848] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:55,071] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:55,071] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:55,240] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:55,240] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:55,408] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:55,409] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:55,592] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:55,592] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:55,783] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 1
-
-[15:11:55,784] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:56,416] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -66.14245
-moveFromPosY: -136.50858
-moveToPosX: 20.952366
-moveToPosY: -100.95238
-
-[15:11:56,592] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -44.81215
-moveFromPosY: -115.17828
-moveToPosX: 55.23808
-moveToPosY: -26.666666
-
-[15:11:56,792] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -19.21279
-moveFromPosY: -89.578926
-moveToPosX: 60.952366
-moveToPosY: -1.9047619
-
-[15:11:56,960] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 4.2712417
-moveFromPosY: -66.094894
-moveToPosX: 62.85713
-moveToPosY: 5.714286
-
-[15:11:57,176] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 29.858568
-moveFromPosY: -40.507553
-moveToPosX: 62.85713
-moveToPosY: 7.6190476
-
-[15:11:57,656] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:11:58,111] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 64.000656
-moveFromPosY: 8.55369
-moveToPosX: -5.7143
-moveToPosY: 5.714286
-
-[15:11:58,330] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:11:58,330] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:11:58,334] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:11:58,736] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 36.26702
-moveFromPosY: 4.285786
-moveToPosX: 121.90475
-moveToPosY: 17.142857
-
-[15:11:59,360] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:12:00,239] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:12:00,912] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:12:02,424] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:12:02,816] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 127.998726
-moveFromPosY: 19.218138
-moveToPosX: 93.33332
-moveToPosY: 97.14286
-
-[15:12:03,008] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 104.53441
-moveFromPosY: 42.682457
-moveToPosX: 99.04761
-moveToPosY: 11.428572
-
-[15:12:03,192] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 98.132866
-moveFromPosY: 19.215065
-moveToPosX: 102.85713
-moveToPosY: -3.8095238
-
-[15:12:03,367] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 104.52173
-moveFromPosY: -4.2504067
-moveToPosX: 100.95237
-moveToPosY: -9.523809
-
-[15:12:03,639] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:12:03,999] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 100.254974
-moveFromPosY: -10.651047
-moveToPosX: 47.619034
-moveToPosY: 22.857143
-
-[15:12:04,287] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:04,288] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:04,290] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:04,719] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:04,719] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:04,723] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:04,895] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:04,895] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:04,898] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:05,072] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:05,072] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:05,074] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:05,224] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:05,224] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:05,230] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:05,887] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:12:06,760] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:06,760] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:06,763] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:07,200] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:07,200] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:07,203] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:07,367] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:07,368] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:07,370] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:07,544] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:07,544] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:07,546] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:07,711] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:07,711] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:07,715] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:07,871] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:07,871] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:07,873] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:08,047] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:08,047] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:08,049] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:08,200] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:08,200] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:08,202] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:08,361] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:12:08,361] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:12:08,363] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 3, loserId = 2
-[15:12:08,711] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 63.98846
-moveFromPosY: 23.481306
-moveToPosX: -36.19049
-moveToPosY: 150.4762
-
-[15:12:09,296] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:12:10,183] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:12:11,680] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:17:10,913] [INFO] CmdHandlerFactory.init --> ==== 完成 Cmd 和 Handler 的关联 ====
-[15:17:10,955] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> com.tinygame.herostory.cmdHandler.GetRankCmdHandler
-[15:17:10,956] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> com.tinygame.herostory.cmdHandler.UserMoveToCmdHandler
-[15:17:10,958] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> com.tinygame.herostory.cmdHandler.UserLoginCmdHandler
-[15:17:10,959] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> com.tinygame.herostory.cmdHandler.WhoElseIsHereCmdHandler
-[15:17:10,959] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> com.tinygame.herostory.cmdHandler.UserAttkCmdHandler
-[15:17:10,962] [INFO] CmdHandlerFactory.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> com.tinygame.herostory.cmdHandler.UserEntryCmdHandler
-[15:17:10,962] [INFO] GameMsgRecognizer.init --> ==== 完成 MsgBody 和 MsgCode 的关联 ====
-[15:17:10,984] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankResult <==> 18
-[15:17:10,985] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd <==> 17
-[15:17:10,986] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroResult <==> 16
-[15:17:10,988] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$SelectHeroCmd <==> 15
-[15:17:10,989] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginResult <==> 14
-[15:17:10,990] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd <==> 13
-[15:17:10,991] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserDieResult <==> 12
-[15:17:10,992] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserSubtractHpResult <==> 11
-[15:17:10,994] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkResult <==> 10
-[15:17:10,995] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd <==> 9
-[15:17:10,996] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopResult <==> 8
-[15:17:10,997] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserStopCmd <==> 7
-[15:17:10,998] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserQuitResult <==> 6
-[15:17:10,999] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToResult <==> 5
-[15:17:11,000] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd <==> 4
-[15:17:11,001] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereResult <==> 3
-[15:17:11,002] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd <==> 2
-[15:17:11,004] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryResult <==> 1
-[15:17:11,006] [INFO] GameMsgRecognizer.init --> 关联 com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd <==> 0
-[15:17:12,447] [INFO] ServerMain.main --> 服务器启动成功!
-[15:17:45,391] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "a"
-password: "1"
-
-[15:17:45,391] [INFO] UserLoginCmdHandler.handle --> userName = a, password = 1
-[15:17:45,397] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor1
-[15:17:45,538] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
-[15:17:45,538] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 1, userName = a
-[15:17:45,588] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
-[15:17:45,591] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
-[15:17:47,680] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserLoginCmd, msg = userName: "b"
-password: "2"
-
-[15:17:47,680] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 2
-[15:17:47,680] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
-[15:17:47,682] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
-[15:17:47,682] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
-[15:17:47,720] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
-[15:17:47,720] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
-[15:17:48,257] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 144.76189
-moveToPosY: -36.190475
-
-[15:17:48,520] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 34.132866
-moveFromPosY: -34.132866
-moveToPosX: 72.380936
-moveToPosY: 5.714286
-
-[15:17:48,896] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 72.531715
-moveFromPosY: 6.398715
-moveToPosX: 95.23808
-moveToPosY: -1.9047619
-
-[15:17:49,567] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:17:50,376] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:17:50,831] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 95.979004
-moveFromPosY: -2.127237
-moveToPosX: 32.38094
-moveToPosY: 15.238095
-
-[15:17:51,615] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 31.981802
-moveFromPosY: 17.069435
-moveToPosX: 87.61903
-moveToPosY: 5.714286
-
-[15:17:51,799] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 55.434856
-moveFromPosY: 4.2721224
-moveToPosX: 85.71427
-moveToPosY: -1.9047619
-
-[15:17:51,935] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 72.51492
-moveFromPosY: -2.1268537
-moveToPosX: 74.2857
-moveToPosY: -7.6190476
-
-[15:17:52,384] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: 62.85713
-moveToPosY: 22.857143
-
-[15:17:52,639] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 34.132225
-moveFromPosY: 23.465088
-moveToPosX: 68.57141
-moveToPosY: -5.714286
-
-[15:17:53,063] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 70.401024
-moveFromPosY: -6.4019213
-moveToPosX: -32.380966
-moveToPosY: -9.523809
-
-[15:17:53,550] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 8.537726
-moveFromPosY: -10.671233
-moveToPosX: 81.90475
-moveToPosY: -7.6190476
-
-[15:17:53,783] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:53,784] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:53,967] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:53,968] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:54,135] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:54,136] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:54,304] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:54,304] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:54,479] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:54,479] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:54,662] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:54,663] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:54,999] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:55,000] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:55,183] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:55,183] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:55,367] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:55,367] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:55,543] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:55,543] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:55,710] [INFO] MQConsumer$1.consumeMessage --> 从消息队列中收到战斗结果, winnerId = 1, loserId = 2
-[15:17:55,751] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:55,751] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:55,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:55,928] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:56,120] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:56,121] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:56,320] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:56,321] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:56,495] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:56,495] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:57,215] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:17:58,240] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:58,240] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:58,607] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:58,607] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:58,791] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:58,791] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:58,982] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:17:58,983] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:17:59,703] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:18:00,631] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:00,631] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:00,920] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 38.403965
-moveFromPosY: -6.4025607
-moveToPosX: -99.04763
-moveToPosY: 59.04762
-
-[15:18:01,119] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 12.801405
-moveFromPosY: 19.199999
-moveToPosX: -102.857155
-moveToPosY: 30.47619
-
-[15:18:01,815] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:18:02,720] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
-
-[15:18:03,007] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -104.52315
-moveFromPosY: 31.993216
-moveToPosX: 146.66666
-moveToPosY: 47.61905
-
-[15:18:03,216] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -78.923904
-moveFromPosY: 49.058056
-moveToPosX: 119.999985
-moveToPosY: -24.761906
-
-[15:18:03,431] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -51.190674
-moveFromPosY: 21.324802
-moveToPosX: 110.47617
-moveToPosY: -43.809525
-
-[15:18:03,823] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:03,823] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:04,079] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:04,079] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:04,823] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
-[15:18:05,799] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:05,799] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:06,622] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:06,622] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:06,823] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:06,823] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:06,991] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:06,991] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:07,159] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:07,159] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:07,335] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:07,335] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:07,494] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:07,495] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:07,799] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:07,799] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:07,951] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:07,951] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:08,135] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:08,135] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:08,263] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 0.019050116
-moveFromPosY: -29.884928
-moveToPosX: 144.76189
-moveToPosY: 1.9047619
-
-[15:18:08,271] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:08,271] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:08,479] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:08,479] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:08,678] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:08,679] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
-[15:18:08,871] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
-
-[15:18:08,872] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:23:28,928] [INFO] UserLoginCmdHandler.handle --> userName = b, password = 1
+[20:23:28,928] [INFO] LoginService$AsyncGetUserByName.doAsync --> 当前线程 = AsyncOperationProcessor2
+[20:23:28,929] [ERROR] LoginService$AsyncGetUserByName.doAsync --> 用户密码错误, userName = b
+[20:23:30,930] [ERROR] LoginService.updateUserBasicInfoInRedis --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.login.LoginService.updateUserBasicInfoInRedis(LoginService.java:80)
+	at com.tinygame.herostory.login.LoginService.access$100(LoginService.java:17)
+	at com.tinygame.herostory.login.LoginService$AsyncGetUserByName.doAsync(LoginService.java:173)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 11 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 18 more
+[20:23:30,930] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 当前线程 = MainThreadProcessor
+[20:23:30,930] [INFO] UserLoginCmdHandler.lambda$handle$0 --> 用户登录成功, userId = 2, userName = b
+[20:23:30,974] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserEntryCmd, msg = 
+[20:23:30,975] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$WhoElseIsHereCmd, msg = 
+[20:23:32,784] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:33,528] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveToPosX: -66.457245
+moveToPosY: -16.195463
+
+[20:23:33,679] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -19.199871
+moveFromPosY: -17.066496
+moveToPosX: -108.90052
+moveToPosY: -17.312391
+
+[20:23:33,856] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -42.666115
+moveFromPosY: -19.2
+moveToPosX: -96.61431
+moveToPosY: -17.312391
+
+[20:23:34,032] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -63.9991
+moveFromPosY: -17.064833
+moveToPosX: -65.34031
+moveToPosY: -7.260035
+
+[20:23:34,184] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -66.13325
+moveFromPosY: -6.396289
+moveToPosX: -11.727747
+moveToPosY: 2.7923212
+
+[20:23:34,343] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -44.800514
+moveFromPosY: 4.2676473
+moveToPosX: 20.663177
+moveToPosY: -5.026178
+
+[20:23:34,503] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -23.47814
+moveFromPosY: -6.3966727
+moveToPosX: 15.078535
+moveToPosY: -17.312391
+
+[20:23:34,976] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -81.07201
+moveFromPosY: -21.34503
+moveToPosX: 79.86038
+moveToPosY: -13.961606
+
+[20:23:35,152] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -57.609608
+moveFromPosY: -12.816006
+moveToPosX: 15.078535
+moveToPosY: 68.6911
+
+[20:23:35,311] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -38.407684
+moveFromPosY: 6.3859134
+moveToPosX: -76.5096
+moveToPosY: 58.638744
+
+[20:23:35,463] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -57.606533
+moveFromPosY: 25.584759
+moveToPosX: -123.42059
+moveToPosY: -16.195463
+
+[20:23:35,639] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -81.07264
+moveFromPosY: 2.118646
+moveToPosX: -69.80803
+moveToPosY: -38.53403
+
+[20:23:35,807] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -68.28056
+moveFromPosY: -19.214987
+moveToPosX: -27.364746
+moveToPosY: -44.118675
+
+[20:23:36,455] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:37,631] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:38,458] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:38,887] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:39,479] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:39,663] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:39,823] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:40,167] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 17.06394
+moveFromPosY: -19.195776
+moveToPosX: -87.67888
+moveToPosY: -16.195463
+
+[20:23:40,459] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:40,632] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -40.536186
+moveFromPosY: -14.9291525
+moveToPosX: -177.03316
+moveToPosY: -2.7923212
+
+[20:23:41,215] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -115.20103
+moveFromPosY: -2.1294086
+moveToPosX: -143.5253
+moveToPosY: -30.715532
+
+[20:23:41,906] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:23:42,460] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:44,460] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:46,461] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:48,463] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:49,427] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:50,351] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:23:51,343] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -25.614328
+moveFromPosY: -44.814087
+moveToPosX: -158.04538
+moveToPosY: -21.780106
+
+[20:23:51,495] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -44.81305
+moveFromPosY: -25.615362
+moveToPosX: -149.10994
+moveToPosY: -41.884815
+
+[20:23:51,663] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -66.14553
+moveFromPosY: -42.681732
+moveToPosX: -131.23909
+moveToPosY: -51.937172
+
+[20:23:51,927] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:23:51,927] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:23:52,320] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -100.27863
+moveFromPosY: -53.34874
+moveToPosX: -79.86038
+moveToPosY: -53.0541
+
+[20:23:52,352] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:23:53,759] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:54,039] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:54,303] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:54,543] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:23:54,783] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -145.0679
+moveFromPosY: -31.996286
+moveToPosX: 277.55673
+moveToPosY: -44.118675
+
+[20:23:55,071] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -106.668655
+moveFromPosY: -44.79706
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:55,352] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -70.40306
+moveFromPosY: -40.53082
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:55,607] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -38.403316
+moveFromPosY: -42.66522
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:55,855] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -6.4040833
+moveFromPosY: -40.530308
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:56,111] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 25.595148
+moveFromPosY: -42.665092
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:56,384] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 59.733513
+moveFromPosY: -40.530563
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:56,631] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 91.72828
+moveFromPosY: -42.663685
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:56,879] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 123.72751
+moveFromPosY: -40.52941
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:57,159] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 159.99286
+moveFromPosY: -42.663425
+moveToPosX: 274.20593
+moveToPosY: -41.884815
+
+[20:23:57,695] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 228.25897
+moveFromPosY: -40.528515
+moveToPosX: -161.39616
+moveToPosY: -123.42059
+
+[20:23:57,959] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 194.12663
+moveFromPosY: -74.66088
+moveToPosX: -171.44852
+moveToPosY: -123.42059
+
+[20:23:58,279] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 153.59354
+moveFromPosY: -115.19401
+moveToPosX: -178.15009
+moveToPosY: -114.48517
+
+[20:23:58,535] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 119.46105
+moveFromPosY: -113.06089
+moveToPosX: -178.15009
+moveToPosY: -114.48517
+
+[20:23:59,559] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -78.93988
+moveFromPosY: -51.21434
+moveToPosX: -28.481674
+moveToPosY: 105.549736
+
+[20:23:59,783] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -51.208176
+moveFromPosY: -23.482626
+moveToPosX: -28.481674
+moveToPosY: 105.549736
+
+[20:24:00,224] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -27.74142
+moveFromPosY: 34.116608
+moveToPosX: 220.59337
+moveToPosY: 17.312391
+
+[20:24:00,447] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -0.00791485
+moveFromPosY: 17.05088
+moveToPosX: 254.10123
+moveToPosY: -73.15881
+
+[20:24:01,167] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 93.85602
+moveFromPosY: -74.68083
+moveToPosX: 407.12042
+moveToPosY: -31.83246
+
+[20:24:02,071] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 209.05399
+moveFromPosY: -29.880693
+moveToPosX: -294.31064
+moveToPosY: -43.001743
+
+[20:24:03,591] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -179.20055
+moveFromPosY: -115.19465
+moveToPosX: 391.48343
+moveToPosY: 47.46946
+
+[20:24:06,111] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 142.92645
+moveFromPosY: 49.068405
+moveToPosX: -247.39964
+moveToPosY: -140.17451
+
+[20:24:06,551] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 85.327614
+moveFromPosY: -8.530438
+moveToPosX: 282.02444
+moveToPosY: -20.663176
+
+[20:24:06,768] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 113.06086
+moveFromPosY: -21.329798
+moveToPosX: 381.43106
+moveToPosY: -29.598604
+
+[20:24:07,015] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 142.92647
+moveFromPosY: -29.862148
+moveToPosX: 400.41885
+moveToPosY: -36.300175
+
+[20:24:07,287] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 179.19183
+moveFromPosY: -38.39642
+moveToPosX: 400.41885
+moveToPosY: -36.300175
+
+[20:24:08,719] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 362.65613
+moveFromPosY: -36.26202
+moveToPosX: -399.3019
+moveToPosY: -92.1466
+
+[20:24:09,799] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4294967295
+
+[20:24:10,128] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -294.40366
+moveFromPosY: -44.813683
+moveToPosX: 418.2897
+moveToPosY: -26.247818
+
+[20:24:11,906] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:24:17,712] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -401.06366
+moveFromPosY: -93.86176
+moveToPosX: 160.27924
+moveToPosY: 59.755672
+
+[20:24:17,895] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -377.59702
+moveFromPosY: -70.39514
+moveToPosX: -12.844676
+moveToPosY: -41.884815
+
+[20:24:29,456] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 420.25012
+moveFromPosY: -25.613419
+moveToPosX: 163.63002
+moveToPosY: -36.300175
+
+[20:24:29,687] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 390.38385
+moveFromPosY: -38.413036
+moveToPosX: 159.16231
+moveToPosY: -36.300175
+
+[20:24:29,871] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 366.919
+moveFromPosY: -36.27915
+moveToPosX: 144.64224
+moveToPosY: -40.767887
+
+[20:24:30,063] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 343.45148
+moveFromPosY: -42.67915
+moveToPosX: 140.17451
+moveToPosY: -40.767887
+
+[20:24:30,424] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: -12.804577
+moveFromPosY: -40.529026
+moveToPosX: 83.211174
+moveToPosY: -55.287956
+
+[20:24:30,617] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 10.662047
+moveFromPosY: -55.46073
+moveToPosX: 54.171032
+moveToPosY: -50.820244
+
+[20:24:30,775] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 31.995934
+moveFromPosY: -49.06252
+moveToPosX: 38.53403
+moveToPosY: -46.35253
+
+[20:24:30,951] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 40.52803
+moveFromPosY: -44.795383
+moveToPosX: 30.715534
+moveToPosY: -43.001743
+
+[20:24:31,792] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 29.868193
+moveFromPosY: -42.66188
+moveToPosX: 40.76789
+moveToPosY: -40.767887
+
+[20:24:32,511] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 138.64938
+moveFromPosY: -40.545902
+moveToPosX: 155.81152
+moveToPosY: -43.001743
+
+[20:24:32,696] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 157.849
+moveFromPosY: -44.812145
+moveToPosX: 174.7993
+moveToPosY: -46.35253
+
+[20:24:32,855] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 174.9155
+moveFromPosY: -46.944626
+moveToPosX: 161.39616
+moveToPosY: -48.586388
+
+[20:24:33,023] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 159.98163
+moveFromPosY: -49.07877
+moveToPosX: 139.05759
+moveToPosY: -47.46946
+
+[20:24:33,207] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 138.64847
+moveFromPosY: -46.94565
+moveToPosX: 123.42059
+moveToPosY: -47.46946
+
+[20:24:33,399] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 121.579796
+moveFromPosY: -49.07928
+moveToPosX: 110.017456
+moveToPosY: -48.586388
+
+[20:24:33,872] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:24:33,872] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:34,047] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:24:34,048] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:34,215] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:24:34,215] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:34,375] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 2
+
+[20:24:34,375] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:35,279] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:35,280] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:35,447] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:35,447] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:35,623] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:35,623] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:35,791] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:35,791] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:35,952] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:35,952] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:36,120] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:36,120] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:36,295] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:36,296] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:36,495] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:36,495] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:36,671] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:36,671] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:36,871] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:36,871] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,925] [ERROR] MQProducer.sendMsg --> org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to [192.168.74.111:9876] failed
+java.lang.IllegalStateException: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to [192.168.74.111:9876] failed
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:681)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:511)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.tryToFindTopicPublishInfo(DefaultMQProducerImpl.java:692)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:556)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1342)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1288)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.send(DefaultMQProducer.java:324)
+	at com.tinygame.herostory.mq.MQProducer.sendMsg(MQProducer.java:67)
+	at com.tinygame.herostory.cmdHandler.UserAttkCmdHandler.handle(UserAttkCmdHandler.java:65)
+	at com.tinygame.herostory.cmdHandler.UserAttkCmdHandler.handle(UserAttkCmdHandler.java:14)
+	at com.tinygame.herostory.MainThreadProcessor.lambda$process$1(MainThreadProcessor.java:77)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.rocketmq.remoting.exception.RemotingConnectException: connect to [192.168.74.111:9876] failed
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.getAndCreateNameserverChannel(NettyRemotingClient.java:441)
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.getAndCreateChannel(NettyRemotingClient.java:396)
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient.invokeSync(NettyRemotingClient.java:365)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1369)
+	at org.apache.rocketmq.client.impl.MQClientAPIImpl.getTopicRouteInfoFromNameServer(MQClientAPIImpl.java:1359)
+	at org.apache.rocketmq.client.impl.factory.MQClientInstance.updateTopicRouteInfoFromNameServer(MQClientInstance.java:624)
+	... 15 more
+[20:24:39,925] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,925] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,925] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,925] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,926] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,926] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,926] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,926] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:24:39,926] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,926] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,927] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,927] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,927] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,927] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 42.66563
+moveFromPosY: -40.529144
+moveToPosX: 114.48517
+moveToPosY: -72.041885
+
+[20:24:39,927] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 61.866016
+moveFromPosY: -59.72953
+moveToPosX: 114.48517
+moveToPosY: -72.041885
+
+[20:24:39,927] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,927] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,928] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 85.33225
+moveFromPosY: -72.52876
+moveToPosX: 46.35253
+moveToPosY: -54.17103
+
+[20:24:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 55.465885
+moveFromPosY: -53.329018
+moveToPosX: 44.118675
+moveToPosY: -54.17103
+
+[20:24:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 42.66589
+moveFromPosY: -55.462906
+moveToPosX: 110.017456
+moveToPosY: -58.638744
+
+[20:24:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserMoveToCmd, msg = moveFromPosX: 66.133156
+moveFromPosY: -59.72953
+moveToPosX: 114.48517
+moveToPosY: -58.638744
+
+[20:24:39,928] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:39,929] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:40,759] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:40,759] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:40,943] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:40,943] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:41,135] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:41,135] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:41,320] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:41,320] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:41,503] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:41,503] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:41,671] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:41,671] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:41,839] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:41,839] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:42,023] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:42,023] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:42,199] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:42,200] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:42,367] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:24:42,367] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:24:43,039] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:24:44,175] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:24:45,040] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:24:47,041] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:25:11,906] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:25:41,906] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:25:46,663] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$UserAttkCmd, msg = targetUserId: 4
+
+[20:25:46,664] [INFO] UserAttkCmdHandler.handle --> 当前线程 = MainThreadProcessor
+[20:25:54,919] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:25:55,616] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:25:55,791] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:25:55,959] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:25:56,111] [INFO] MainThreadProcessor.lambda$process$1 --> 收到客户端消息,msgClazz = com.tinygame.herostory.msg.GameMsgProtocol$GetRankCmd, msg = 
+[20:25:56,921] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:25:58,922] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:26:00,922] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:26:02,923] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:26:04,924] [ERROR] RankService$AsyncGetRank.doAsync --> Could not get a resource from the pool
+redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:59)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:234)
+	at com.tinygame.herostory.util.RedisUtil.getRedis(RedisUtil.java:50)
+	at com.tinygame.herostory.rank.RankService$AsyncGetRank.doAsync(RankService.java:87)
+	at com.tinygame.herostory.async.AsyncOperationProcessor.lambda$process$1(AsyncOperationProcessor.java:72)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Failed connecting to host 192.168.74.111:6379
+	at redis.clients.jedis.Connection.connect(Connection.java:204)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:100)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1866)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:117)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:889)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:424)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:349)
+	at redis.clients.jedis.util.Pool.getResource(Pool.java:50)
+	... 9 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at redis.clients.jedis.Connection.connect(Connection.java:181)
+	... 16 more
+[20:26:11,907] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:26:41,905] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:27:11,907] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:27:41,907] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true
+[20:28:11,907] [INFO] Slf4jLoggerFactory$Slf4jLogger.info --> closeChannel: close the connection to remote address[] result: true

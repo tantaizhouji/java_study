@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改参数</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <style>
+        form {
+            padding-top: 100px;
+            margin: auto;
+            width: 40%;
+        }
+
+        .tip {
+            color: #e20411;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<!--导航栏 ↓-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index">首页</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <!--    下拉单 ↓        -->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expandzed="false">管理<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/manager/accountList">员工列表</a></li>
+                        <li><a href="/manager/roleList">角色列表</a></li>
+                        <li><a href="/manager/permissionList">权限列表</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--    下拉单 ↑        -->
+
+            <!--      搜索框 ↓      -->
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="员工的姓名">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <!--      搜索框 ↑     -->
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+
+                        <img style="width: 24px;height: 18px" th:src="@{'/'+${session.account.location}}" alt="..."
+                             class="img-rounded">
+
+                        欢迎您: [[${session.account.loginName}]]<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/account/profile">个人信息</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="/account/logout">用户退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--导航栏 ↑-->
+
+<form>
+    <div class="form-group" style="display: none">
+        <label>ID</label>
+        <input type="text" class="form-control" id="id" disabled="true" th:value="${role.id}">
+    </div>
+    <div class="form-group">
+        <label for="name">*名称</label>
+        <input type="text" class="form-control" id="name" placeholder="请输入名称" th:value="${role.name}">
+    </div>
+
+    <div class="btn btn-default" id="btn_modifyName">修改名称</div>
+    <p class="tip">名称不能为空</p>
+</form>
+
+<form id="permissionForm">
+    <div class="form-group" style="display: none">
+        <label>ID</label>
+        <input type="text" class="form-control" name="id" th:value="${role.id}">
+    </div>
+    <p style="font-size: 20px" class="text-primary">可以访问页面的权限:</p>
+    <div th:each="item : ${permissionList}">
+        <input type="checkbox" name="permissions" th:value="${item.id}"
+               th:checked="${role.permissionList.contains(item)}"><span th:text="${item.name}"></span>
+    </div>
+    <p class="tip_permission" style="display: none;color: #e20411;">修改失败</p>
+    <div class="btn btn-default" id="btn_modifyPermission">修改权限</div>
+</form>
+
+</body>
+</html>
+<script type="text/javascript">
+
+    /**
+     * 修改角色名称
+     */
+    $("#btn_modifyName").click(function () {
+
+        var id = $("#id").val();
+        var name = $("#name").val();
+
+        if (name == "") {
+            $(".tip").html("名称不能为空")
+            $(".tip").css("display", "block");
+            return;
+        } else {
+            var url = "/api/v1/manager/role/modifyName";
+            var args = {id: id, name: name};
+
+            $.post(url, args, function (data) {
+                if (data.code == 200) {
+
+                    $(".tip").html(data.msg);
+                    $(".tip").css("display", "block");
+                } else {
+                    $(".tip").html(data.msg);
+                    $(".tip").css("display", "block");
+                }
+
+                console.log(data)
+            });
+        }
+    });
+
+    /**
+     * 异步修改权限
+     */
+    $("#btn_modifyPermission").click(function () {
+
+        //拿到表单里的具有name的value值
+        var args = $("#permissionForm").serializeArray();
+        var url = "/api/v1/manager/role/modifyPermissions";
+        console.log(args);
+
+        $.post(url, args, function (data) {
+            if (data.code == 200) {
+
+                $(".tip_permission").html(data.msg);
+                $(".tip_permission").css("display", "block");
+            } else {
+                $(".tip_permission").html(data.msg);
+                $(".tip_permission").css("display", "block");
+            }
+        });
+
+    });
+</script>

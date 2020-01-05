@@ -38,8 +38,6 @@ public class ManagerController {
     public String accountList(@RequestParam(defaultValue = "1") int pageNum, @RequestParam(defaultValue = "10") int pageSize, Model model) {
         PageInfo<Account> accPageInfo = accSrv.findAll(pageNum, pageSize);
 
-        System.out.println(accPageInfo);
-
         model.addAttribute("accPageInfo", accPageInfo);
 
         return "manager/accountList";

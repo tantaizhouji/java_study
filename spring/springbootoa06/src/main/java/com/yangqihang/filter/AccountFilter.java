@@ -17,7 +17,7 @@ public class AccountFilter implements Filter {
 
     //忽略uri组，公共uri
     private final String[] IGNORE_URI = {
-            "/css/", "/js/", "/images/", "/errorPage", "/index", "/default.jpg","/favicon.ico",
+            "/css/", "/js/", "/images/", "/errorPage", "/index", "/uploads/default.jpg", "/favicon.ico",
             "/account/login", "/api/v1/manager/account/accountLogin",
             "/account/register", "/api/v1/manager/account/accountRegister", "/account/logout"};
 

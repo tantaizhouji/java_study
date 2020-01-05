@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01</title>
+    <!-- 引入JQ函数库 -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li>吃饭</li>
+        <li>睡觉</li>
+        <li>玩游戏</li>
+    </ul>
+    <div id="box">
+        我爱你祖国
+    </div>
+    <p class="cur">
+        我今天在学习
+    </p>
+</body>
+
+</html>
+<script>
+    //JQ函数经常用来操作节点树上的标签
+    //支持曾经学习过的选择器:标签选择器、ID选择器、class选择器
+    //注意1：当程序当中引入JQ，这个函数库对外暴露了一个$函数,它是JQ函数库的一个核心函数,经常用来匹配标签
+    console.log($);
+    //标签选择器
+    console.log($("li"));
+    //ID选择器
+    console.log($("#box"));
+    //类选择器
+    console.log($(".cur"));
+    //如果想设置匹配标签的行内样式可以连续打点css函数
+    $("li").css("color", "red");
+    $("p").css({
+        "color": "blue",
+        "fontSize": 30
+    });
+</script>

@@ -37,6 +37,6 @@ public class PermissionController {
 
         model.addAttribute("permission",permission);
 
-        return "/permission/modify";
+        return "permission/modify";
     }
 }

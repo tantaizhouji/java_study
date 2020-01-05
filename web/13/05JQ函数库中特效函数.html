@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <style>
+        div {
+            width: 600px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="box1">slideUp</button>
+    <button id="box2">slideDown</button>
+    <button id="box3">fadeOut</button>
+    <button id="box4">fadeIn</button>
+    <div></div>
+</body>
+
+</html>
+<script>
+    //第一个按钮单击事件
+    $("#box1").click(function() {
+        //slideUp:可以让元素向上卷起,传递的参数代表动画时间ms
+        $("div").slideUp(1000);
+    });
+
+    //第二个按钮单击事件
+    $("#box2").click(function() {
+        //slideDown:可以让元素向下展开
+        $("div").slideDown(1000);
+    });
+
+    //第三个按钮单击事件
+    $("#box3").click(function() {
+        //fadeOut:可以让元素淡出
+        $("div").fadeOut(1000);
+    });
+
+    //第四个按钮单击事件
+    $("#box4").click(function() {
+        //fadeIn:可以让元素淡入
+        $("div").fadeIn(1000);
+    });
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>04</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div>点我可以放大我</div>
+</body>
+
+</html>
+<script>
+    var size = 16;
+    //JQ对于元素绑定事件都封装成函数
+    $("div").click(function() {
+        size++;
+
+        $(this).css({
+            "fontSize": size
+        });
+    });
+</script>

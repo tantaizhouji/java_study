@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98963e60-b7b1-4d8b-ba78-6bca0c90baa5" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="98963e60-b7b1-4d8b-ba78-6bca0c90baa5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/springboot_mybatisPlus/springboot_mybatisPlus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring/springbootmvc01/springbootmvc01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/oopdemo1/META-INF/oopdemo1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/PermissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/common/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/common/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/test/java/com/yangqihang/Springbootoa06ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/test/java/com/yangqihang/Springbootoa06ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/PermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/PermissionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/common/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/common/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/test-classes/com/yangqihang/Springbootoa06ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/test-classes/com/yangqihang/Springbootoa06ApplicationTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +55,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1TvVwqksOFb5v0JH2u8yuH28gTn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -25,19 +75,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.MotoVehicleTest">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="MotoVehicleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yangqihang.homework.MotoVehicleTest" />
       <module name="oopdemo1" />
@@ -71,13 +109,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yangqihang.Test" />
+      <module name="oopdemo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yangqihang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.MotoVehicleTest" />
         <item itemvalue="Application.PetTest" />
         <item itemvalue="Application.Point" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,10 +158,29 @@
       <workItem from="1574436264434" duration="133000" />
       <workItem from="1574796976790" duration="42000" />
       <workItem from="1576755418226" duration="62000" />
+      <workItem from="1578217406259" duration="1074000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="245" key="GridCell.Tab.0.bottom" timestamp="1578221922497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578221922497" />
+    <state width="1877" height="245" key="GridCell.Tab.0.center" timestamp="1578221922497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578221922497" />
+    <state width="1877" height="245" key="GridCell.Tab.0.left" timestamp="1578221922497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578221922497" />
+    <state width="1877" height="245" key="GridCell.Tab.0.right" timestamp="1578221922497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="245" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578221922497" />
   </component>
 </project>

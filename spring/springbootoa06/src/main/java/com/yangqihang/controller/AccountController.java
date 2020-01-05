@@ -7,12 +7,15 @@ import com.yangqihang.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 
@@ -75,20 +78,13 @@ public class AccountController {
      * @return
      */
     @RequestMapping("/fileUpload")
-    public String fileUpload(MultipartFile fileName, HttpServletRequest request) {
+    public String fileUpload(@RequestParam MultipartFile fileName, HttpServletRequest request) {
         //获取当前登录账户
         Account account = (Account) request.getSession().getAttribute("account");
 
-        try {
-            //文件转存
-            fileName.transferTo(new File("D:/github/java_study/uploads/" + fileName.getOriginalFilename()));
+        accSrv.updateProfile(fileName,account);
 
-            accSrv.updateProfile(fileName.getOriginalFilename(), account);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return "/account/profile";
+        return "account/profile";
     }
 
     @RequestMapping("/modifyRole")
@@ -96,7 +92,7 @@ public class AccountController {
         Account account = accSrv.findById(id);
         List<Role> roleList = roleSrv.findAll();
 
-        model.addAttribute("account",account);
+        model.addAttribute("account", account);
         model.addAttribute("roleList", roleList);
 
         return "account/modifyRole";

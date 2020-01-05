@@ -70,7 +70,7 @@
                        aria-expanded="false">
 
                         <!--头像-->
-                        <img style="width: 24px;height: 18px" th:src="@{'/' + ${session.account.location}}" alt="..." class="img-rounded">
+                        <img style="width: 24px;height: 18px" th:src="@{'/uploads/' + ${session.account.location}}" alt="..." class="img-rounded">
 
                         欢迎您: [[${session.account.loginName}]]<span class="caret"></span></a>
                     <ul class="dropdown-menu">

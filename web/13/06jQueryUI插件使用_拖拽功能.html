@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div>
+        我可以拖拽的
+    </div>
+
+    <ul>
+        <li>吃饭</li>
+        <li>睡觉</li>
+        <li>唱歌</li>
+        <li>游戏</li>
+        <li>跳舞</li>
+    </ul>
+</body>
+
+</html>
+<script>
+    //拖拽
+    $("div").draggable();
+
+    //排序拖拽
+    $("ul").sortable();
+</script>

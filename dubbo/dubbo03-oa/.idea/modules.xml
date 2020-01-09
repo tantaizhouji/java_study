@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbo-oa-consumer/dubbo-oa-consumer.iml" filepath="$PROJECT_DIR$/dubbo-oa-consumer/dubbo-oa-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo-oa-provider/dubbo-oa-provider.iml" filepath="$PROJECT_DIR$/dubbo-oa-provider/dubbo-oa-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubbo03-oa.iml" filepath="$PROJECT_DIR$/dubbo03-oa.iml" />
+    </modules>
+  </component>
+</project>

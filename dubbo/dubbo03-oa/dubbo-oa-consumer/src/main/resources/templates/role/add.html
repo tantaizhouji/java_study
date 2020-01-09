@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加角色</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script th:src="@{/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <style>
+        form {
+            padding-top: 100px;
+            margin: auto;
+            width: 40%;
+        }
+
+        .tip {
+            color: #e20411;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <div class="form-group">
+        <label for="name">*名称</label>
+        <input type="text" class="form-control" id="name" placeholder="请输入名称">
+    </div>
+    <div class="btn btn-default" id="btn_register">添加</div>
+    <p class="tip">名称不能为空</p>
+</form>
+
+</body>
+</html>
+<script type="text/javascript">
+        $("#btn_register").click(function () {
+
+            var name = $("#name").val();
+
+            if (name == "") {
+                $(".tip").html("名称不能为空")
+                $(".tip").css("display", "block");
+                return;
+            } else {
+                var url = "/api/v1/manager/role/add";
+                var args = {name: name};
+
+                $.post(url, args, function (data) {
+                    if (data.code == 200) {
+
+                        $(".tip").html(data.msg);
+                        $(".tip").css("display", "block");
+
+                        // window.location.href="/manager/permissionList";
+                        window.setTimeout("window.location.href='/manager/roleList'", 3000);
+                    } else {
+                        $(".tip").html(data.msg);
+                        $(".tip").css("display", "block");
+                    }
+
+                    console.log(data)
+                });
+            }
+        });
+</script>

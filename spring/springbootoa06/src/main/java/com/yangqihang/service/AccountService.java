@@ -153,22 +153,6 @@ public class AccountService {
     /**
      * 修改头像
      *
-     * @param originalFilename
-     * @param account
-     */
-    public void updateProfile(String originalFilename, Account account) {
-        if (null == account) {
-            throw new RuntimeException("未检测到登录账号");
-        }
-
-        account.setLocation(originalFilename);
-
-        accMapper.updateByPrimaryKeySelective(account);
-    }
-
-    /**
-     * 修改头像
-     *
      * @param fileName
      * @param account
      */

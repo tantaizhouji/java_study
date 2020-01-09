@@ -1,0 +1,10 @@
+spring:
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  application:
+    name: dubbo-oa-consumer
+server:
+  port: 606
+dubbo:
+  registry:
+    address: zookeeper://192.168.74.61:2181

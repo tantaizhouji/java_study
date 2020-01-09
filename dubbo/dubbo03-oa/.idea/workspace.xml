@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5f1f7097-0a61-495e-a064-a13c3cad181a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_spring_spring_context_support_1_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_tobato_fastdfs_client_1_26_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_43_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_coobird_thumbnailator_0_4_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_4_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_spring_boot_autoconfigure_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_spring_boot_autoconfigure_compatible_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_dubbo_dubbo_spring_boot_starter_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_18_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/RespStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/controller/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/controller/ManagerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/service/IPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/common/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/common/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/common/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/common/login.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/common/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/common/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/mainpage/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/subpage/childTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/css/subpage/newStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/Code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/YGIMG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/btn_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/btn_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/caidan-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/cdBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/db.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/dnldata.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/duigou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/dyPPT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/emailIMG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/emailMN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/foot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/h_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/hbtn_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/hbtn_r - 000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/hbtn_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/header_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/heder-logo01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/hzPPT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/i-top_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/jiantou-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/mess_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/mess_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/navright_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/new-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/passicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/pptDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/pptIMG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/pushman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/rightTop-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/rl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/rl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/sandaogang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/sj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/sq_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/sq_close1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/table-tkBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/table-zheBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc216.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc2161.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc217.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/tc218.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/useicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/x_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/images/zshLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/echarts.min1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jQgrit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery-1.9.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery.slimscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/common/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/mainpage/jquery.SuperSlide.2.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/subpage/echarts_compare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/subpage/echarts_modify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/static/js/subpage/table_export2excle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/account/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/account/modifyRole.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/account/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/account/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/errorPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/manager/accountList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/manager/permissionList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/manager/roleList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/permission/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/permission/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/role/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/src/main/resources/templates/role/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/META-INF/dubbo-oa-consumer.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/AccountExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/AccountExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/AccountExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/AccountExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/MenuExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/MenuExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/MenuExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/MenuExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/PermissionExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/PermissionExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/PermissionExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/PermissionExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/RoleExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/RoleExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/RoleExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/com/yangqihang/entity/RoleExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/common/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/common/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/common/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/common/login.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/common/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/common/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/mainpage/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/subpage/childTable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/css/subpage/newStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/Code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/YGIMG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/btn_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/btn_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/caidan-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/cdBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/db.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/dnldata.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/duigou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/dyPPT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/emailIMG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/emailMN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/foot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/h_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/hbtn_l.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/hbtn_r - 000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/hbtn_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/header_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/heder-logo01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/hzPPT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/i-top_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/jiantou-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/mess_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/mess_icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/navright_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/new-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/passicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/pptDate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/pptIMG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/pushman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/rightTop-btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/rl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/rl2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/sandaogang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/sj.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/sq_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/sq_close1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/table-tkBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/table-zheBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc216.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc2161.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc217.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/tc218.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/useicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/x_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/images/zshLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/echarts.min1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jQgrit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery-1.7.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery-1.9.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery.slimscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/jquery.slimscroll.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/common/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/mainpage/jquery.SuperSlide.2.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/subpage/echarts_compare.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/subpage/echarts_modify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/static/js/subpage/table_export2excle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/account/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/account/modifyRole.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/account/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/account/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/errorPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/manager/accountList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/manager/permissionList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/manager/roleList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/permission/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/permission/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/role/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/classes/templates/role/modify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-consumer/target/test-classes/com/yangqihang/dubbooaconsumer/DubboOaConsumerApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/RespStat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/AccountExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/MenuExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/PermissionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/entity/RoleExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/mapper/AccountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/mapper/MyBatisBaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/mapper/PermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/service/IAccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/service/IPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/java/com/yangqihang/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/resources/mybatis/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/resources/mybatis/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/resources/mybatis/mapper/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/src/main/resources/mybatis/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/DubboOaProviderApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/RespStat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/AccountExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/AccountExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/AccountExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/AccountExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/Menu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/MenuExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/MenuExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/MenuExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/MenuExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/PermissionExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/PermissionExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/PermissionExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/PermissionExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/RoleExample$Criteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/RoleExample$Criterion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/RoleExample$GeneratedCriteria.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/entity/RoleExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/mapper/AccountMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/mapper/MenuMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/mapper/MyBatisBaseDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/mapper/PermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/mapper/RoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/service/IAccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/service/IPermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/service/IRoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/com/yangqihang/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/mybatis/mapper/AccountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/mybatis/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/mybatis/mapper/PermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/classes/mybatis/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dubbo-oa-provider/target/test-classes/com/yangqihang/DubboOaProviderApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/service/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/service/AccountService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\repository" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WA9HZSp4kannBe3G0oFifrAPlR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dubbo-oa-consumer/src/main/java/com/yangqihang" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15039062" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.JRebelSettingsComponent" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.yangqihang.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\java_study\dubbo\dubbo03-oa\dubbo-oa-consumer\src\main\java\com\yangqihang" />
+      <recent name="D:\github\java_study\dubbo\dubbo03-oa\dubbo-oa-consumer\src\main\resources" />
+      <recent name="D:\github\java_study\dubbo\dubbo03-oa\dubbo-oa-consumer\src\main\java\com\yangqihang\service" />
+      <recent name="D:\github\java_study\dubbo\dubbo03-oa\dubbo-oa-provider\src\main\java\com\yangqihang" />
+      <recent name="D:\github\java_study\dubbo\dubbo03-oa\dubbo-oa-provider\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\java_study\dubbo\dubbo03-oa\dubbo-oa-provider\src\main\resources\mybatis" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.yangqihang" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yangqihang" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yangqihang.service" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DubboOaConsumerApplication">
+    <configuration name="DubboOaConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dubbo-oa-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangqihang.DubboOaConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboOaProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dubbo-oa-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yangqihang.DubboOaProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DubboOaConsumerApplication" />
+      <item itemvalue="Spring Boot.DubboOaProviderApplication" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.13095239" />
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+          <option name="groupByContributor" value="true" />
+        </serviceView>
+        <serviceView>
+          <option name="contentProportion" value="0.15367965" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.dashboard.RunDashboardServiceViewContributor@70596d1c" type="d2cb1801:ServiceModel$ContributorNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="com.intellij.execution.dashboard.RunDashboardServiceViewContributor@70596d1c" type="d2cb1801:ServiceModel$ContributorNode" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+          <option name="groupByContributor" value="true" />
+          <option name="viewType" value="contributor" />
+          <option name="roots">
+            <list>
+              <ServiceState>
+                <option name="contributor" value="com.intellij.execution.dashboard.RunDashboardServiceViewContributor" />
+              </ServiceState>
+            </list>
+          </option>
+        </serviceView>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+          <option name="groupByContributor" value="true" />
+          <option name="isSelected" value="true" />
+          <option name="viewType" value="service" />
+          <option name="roots">
+            <list>
+              <ServiceState>
+                <option name="path">
+                  <list>
+                    <option value="Run Dashboard" />
+                    <option value="SpringBootApplicationConfigurationType" />
+                    <option value="SpringBootApplicationConfigurationType/Finished" />
+                    <option value="SpringBootApplicationConfigurationType/DubboOaProviderApplication" />
+                  </list>
+                </option>
+                <option name="contributor" value="com.intellij.execution.dashboard.RunDashboardServiceViewContributor" />
+              </ServiceState>
+            </list>
+          </option>
+          <option name="parentView" value="0" />
+        </serviceView>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+          <option name="groupByContributor" value="true" />
+          <option name="viewType" value="service" />
+          <option name="roots">
+            <list>
+              <ServiceState>
+                <option name="path">
+                  <list>
+                    <option value="Run Dashboard" />
+                    <option value="SpringBootApplicationConfigurationType" />
+                    <option value="SpringBootApplicationConfigurationType/Finished" />
+                    <option value="SpringBootApplicationConfigurationType/DubboOaConsumerApplication" />
+                  </list>
+                </option>
+                <option name="contributor" value="com.intellij.execution.dashboard.RunDashboardServiceViewContributor" />
+              </ServiceState>
+            </list>
+          </option>
+          <option name="parentView" value="0" />
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f1f7097-0a61-495e-a064-a13c3cad181a" name="Default Changelist" comment="" />
+      <created>1578581444970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578581444970</updated>
+      <workItem from="1578581448275" duration="10538000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="179" width="816" height="778" key="#Intentions" timestamp="1578585058835">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" width="816" height="778" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1578585058835" />
+    <state x="414" y="175" width="1174" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578593897892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" width="1174" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578593897892" />
+    <state x="713" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1578585015717">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="713" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578585015717" />
+    <state x="697" y="379" width="526" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1578588575402">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="697" y="379" width="526" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1578588575402" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1578584024477">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578584024477" />
+    <state width="1848" height="282" key="GridCell.Tab.0.bottom" timestamp="1578593958787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958787" />
+    <state width="1848" height="282" key="GridCell.Tab.0.center" timestamp="1578593958787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958787" />
+    <state width="1848" height="282" key="GridCell.Tab.0.left" timestamp="1578593958787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958787" />
+    <state width="1848" height="282" key="GridCell.Tab.0.right" timestamp="1578593958787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958787" />
+    <state width="1848" height="282" key="GridCell.Tab.1.bottom" timestamp="1578593958788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958788" />
+    <state width="1848" height="282" key="GridCell.Tab.1.center" timestamp="1578593958787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958787" />
+    <state width="1848" height="282" key="GridCell.Tab.1.left" timestamp="1578593958787">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958787" />
+    <state width="1848" height="282" key="GridCell.Tab.1.right" timestamp="1578593958788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1848" height="282" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578593958788" />
+    <state x="440" y="95" key="SettingsEditor" timestamp="1578592277808">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="95" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578592277808" />
+    <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578584836041">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578584836041" />
+    <state x="334" y="221" key="new project wizard" timestamp="1578581654551">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="221" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1578581654551" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578591295740">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578591295740" />
+  </component>
+</project>

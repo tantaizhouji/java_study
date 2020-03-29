@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98963e60-b7b1-4d8b-ba78-6bca0c90baa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/springboot_mybatisPlus/springboot_mybatisPlus.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring/springbootmvc01/springbootmvc01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../dubbo/dubbo03-oa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../dubbo/dubbo03-oa/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oopdemo1/META-INF/oopdemo1.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootmvc01/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/PermissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/java/com/yangqihang/controller/PermissionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/common/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/css/common/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/static/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/main/resources/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/src/test/java/com/yangqihang/Springbootoa06ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/src/test/java/com/yangqihang/Springbootoa06ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/AccountController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/PermissionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/com/yangqihang/controller/PermissionController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/common/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/css/common/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/static/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/classes/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring/springbootoa06/target/test-classes/com/yangqihang/Springbootoa06ApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring/springbootoa06/target/test-classes/com/yangqihang/Springbootoa06ApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +121,7 @@
       <workItem from="1574796976790" duration="42000" />
       <workItem from="1576755418226" duration="62000" />
       <workItem from="1578217406259" duration="1074000" />
+      <workItem from="1582642544422" duration="67000" />
     </task>
     <servers />
   </component>
@@ -182,5 +145,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="245" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578221922497" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1582642569640">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582642569640" />
   </component>
 </project>

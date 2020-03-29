@@ -68,6 +68,7 @@ select * from emp where deptno != 10 and deptno != 20;
 --现在要查询部门编号为10和20的员工,要求使用exists实现
 select * from emp where deptno = 10 or deptno = 20;
 --通过外层循环来规范内层循环
+select * from emp e where exists (select deptno from dept d where d.deptno in(10,20) and e.deptno = d.deptno);
 select *
   from emp e
  where exists (select deptno
@@ -110,9 +111,9 @@ select ename,(e.sal + e.comm)*12 from emp e;
 select ename,(e.sal + nvl(e.comm,0))*12 from emp e;
 --dual是oracle数据库中的一种虚拟表,没有实际的数据,可以用来做测试
 select 100+null from dual;
--- A
+-- A 集合A
 select * from emp where deptno = 30;
--- B
+-- B 集合B
 select * from emp where sal > 1000;
 --交集,两个集合中交叉的数据集,只显示一次
 select *

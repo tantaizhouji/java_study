@@ -16,6 +16,8 @@ fdfs:
   thumb-image:
     height: 300
     width: 300
+server:
+  port: 12000
 ---
 spring:
   profiles: dev
@@ -25,5 +27,3 @@ spring:
     password: 123456
   resources:
     static-locations: file:/var/data/static/
-server:
-  port: 8081
